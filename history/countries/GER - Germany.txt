@@ -966,6 +966,21 @@ recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled 
 
 #EXTENDED MONARCH PEOPLE
 recruit_character = GER_otto_habsburg
+recruit_character = GER_joseph_habsburg
+recruit_character = GER_karl_albrecht_habsburg
+recruit_character = GER_michael_hohenzollern
+recruit_character = GER_child_simeon
+recruit_character = GER_child_peter
+recruit_character = GER_greece_george
+recruit_character = GER_wilhelmina
+recruit_character = GER_belgium_leopold
+recruit_character = GER_lit_karl_gero
+recruit_character = GER_poland_friedrich_christian
+recruit_character = GER_pavel_bermondt_avalov
+recruit_character = GER_denmark_christian_x
+recruit_character = GER_sweden_gustaf_v
+recruit_character = GER_norway_haakon_vii
+recruit_character = GER_iceland_knud
 
 #NEW PEOPLE WW
 recruit_character = GER_werner_von_blomberg

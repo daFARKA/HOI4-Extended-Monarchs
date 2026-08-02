@@ -1,0 +1,1560 @@
+add_namespace = em_GER
+
+# Germany proposes unification
+country_event = { 
+	id = em_GER.1
+	title = em_GER.1.t
+	desc = em_GER.1.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { 
+		name = em_GER.1.a
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+		}
+
+		FROM = { # FROM Accepts
+			country_event = { 
+				id = em_GER.2
+				hours = 5 
+				random_hours = 6
+			}
+		}
+
+		effect_tooltip = {
+			FROM = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+			ROOT = {
+				every_core_state = {		
+					add_core_of = FROM
+				}
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = GAME_OVER_TT
+
+	}
+
+	# We will not compromise on our independence!
+	option = {
+		name = em_GER.1.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+		}
+
+		add_war_support = 0.1
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = { # FROM Rejects
+			country_event = {
+				id = em_GER.3
+				hours = 5 
+				random_hours = 6
+			}
+		}
+
+	}
+}
+
+# [FROM.GetNameDefCap] Accepts our offer - event for GER
+country_event = { 
+	id = em_GER.2
+	title = em_GER.2.t
+	desc = em_GER.2.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { # A great day for the [ROOT.GetAdjective] nation!
+		name = em_GER.2.a  
+		
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+
+		custom_effect_tooltip =  generic_skip_one_line_tt
+		
+		FROM = {
+			every_core_state = {		
+				add_core_of = ROOT
+			}
+		}
+	}
+}
+
+# [FROM.GetNameDefCap] Rejects our offer - event for GER
+country_event = { 
+	id = em_GER.3
+	title = em_GER.3.t
+	desc = em_GER.3.desc 
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# In that case we must respect their wishes
+	option = { 
+		name = em_GER.3.a	
+		ai_chance = {
+			base = 10
+		}
+
+		add_stability = 0.1
+		add_political_power = 50
+	}
+
+	# [FROM.GetNameDefCap] is [ROOT.GetAdjective]!
+	option = { 
+		name = em_GER.3.b	
+		ai_chance = {
+			base = 90
+		}
+
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}	
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		FROM = {
+            every_core_state = {
+                add_core_of = ROOT
+            }
+        }
+	}
+}
+
+country_event = {
+    id = em_GER.4
+
+    title = em_GER.4.t
+    desc = em_GER.4.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.4.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        UKR = {
+            transfer_state = 73
+            transfer_state = 80
+        }
+
+        GER = {
+			set_autonomy = {
+				target = UKR
+				autonomy_state = autonomy_puppet
+			}
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.4.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.5
+
+    title = em_GER.5.t
+    desc = em_GER.5.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.5.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        UKR = {
+            transfer_state = 88
+            transfer_state = 89
+            transfer_state = 91
+            transfer_state = 93
+
+			add_state_core = 88
+        }
+
+        GER = {
+			set_autonomy = {
+				target = UKR
+				autonomy_state = autonomy_puppet
+			}
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.5.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = { 
+	id = em_GER.6
+	title = em_GER.6.t
+	desc = em_GER.6.desc 
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { 
+		name = em_GER.6.a
+
+		add_stability = 0.1
+		add_political_power = 50
+	}
+}
+
+country_event = { 
+	id = em_GER.7
+	title = em_GER.7.t
+	desc = em_GER.7.desc 
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# In that case we must respect their wishes
+	option = { 
+		name = em_GER.7.a	
+		ai_chance = {
+			base = 10
+		}
+
+		add_stability = 0.1
+		add_political_power = 50
+	}
+
+	# [FROM.GetNameDefCap] is [ROOT.GetAdjective]!
+	option = { 
+		name = em_GER.7.b
+		ai_chance = {
+			base = 90
+		}
+
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}	
+	}
+}
+
+country_event = {
+    id = em_GER.8
+
+    title = em_GER.8.t
+    desc = em_GER.8.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.8.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        every_state = {
+			limit = {
+				is_core_of = UKR
+			}
+
+			UKR = {
+				transfer_state = PREV
+			}
+		}
+
+        GER = {
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.8.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.9
+
+    title = em_GER.9.t
+    desc = em_GER.9.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.9.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			transfer_state = 77
+			transfer_state = 971
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.9.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.10
+
+    title = em_GER.10.t
+    desc = em_GER.10.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.10.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			transfer_state = 106
+			transfer_state = 803
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.10.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.11
+
+    title = em_GER.11.t
+    desc = em_GER.11.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.11.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			transfer_state = 184
+			transfer_state = 731
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.11.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.12
+
+    title = em_GER.12.t
+    desc = em_GER.12.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.12.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_integrated_puppet
+			}
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.12.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.13
+
+    title = em_GER.13.t
+    desc = em_GER.13.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.13.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			transfer_state = 308
+			transfer_state = 336
+			transfer_state = 422
+			transfer_state = 423
+			transfer_state = 681
+			transfer_state = 687
+			transfer_state = 692
+			transfer_state = 719
+			transfer_state = 982
+			transfer_state = 1013
+			transfer_state = 1014
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.13.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.14
+
+    title = em_GER.14.t
+    desc = em_GER.14.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.14.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			transfer_state = 310
+			transfer_state = 320
+			transfer_state = 694
+			transfer_state = 779
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.14.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.15
+
+    title = em_GER.15.t
+    desc = em_GER.15.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.15.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			transfer_state = 497
+			transfer_state = 498
+			transfer_state = 935
+			transfer_state = 936
+			transfer_state = 937
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.15.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.16
+
+    title = em_GER.16.t
+    desc = em_GER.16.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.16.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        TRA = {
+			transfer_state = 76
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 764
+        }
+
+        GER = {
+			set_autonomy = {
+				target = TRA
+				autonomy_state = autonomy_puppet
+			}
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.16.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.17
+
+    title = em_GER.17.t
+    desc = em_GER.17.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.17.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+		COG = {
+			transfer_state = 539
+			transfer_state = 660
+			transfer_state = 772
+			transfer_state = 773
+			transfer_state = 774
+		}
+
+        GER = {
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 27
+			transfer_state = 28
+			transfer_state = 29
+			transfer_state = 785
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.17.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.18
+
+    title = em_GER.18.t
+    desc = em_GER.18.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.18.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 72
+			transfer_state = 73
+			transfer_state = 664
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.18.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.19
+
+    title = em_GER.19.t
+    desc = em_GER.19.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.19.a
+
+        ai_chance = {
+            base = 15
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        every_state = {
+			limit = {
+				is_core_of = UKR
+
+				NOT = {
+					state = 73
+					state = 80
+					state = 89
+					state = 91
+					state = 93
+					state = 766
+				}
+			}
+
+			UKR = {
+				transfer_state = PREV
+			}
+		}
+
+        GER = {
+			set_autonomy = {
+				target = UKR
+				autonomy_state = autonomy_puppet
+			}
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.19.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em_GER.20
+
+    title = em_GER.20.t
+    desc = em_GER.20.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em_GER.20.a
+
+        ai_chance = {
+            base = 15
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        GER = {
+			transfer_state = 144
+			transfer_state = 924
+			transfer_state = 925
+
+            country_event = { id = em_GER.6 }
+        }
+    }
+
+    option = {
+        name = em_GER.20.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        GER = {
+            country_event = { id = em_GER.7 }
+        }
+    }
+}

@@ -26770,6 +26770,21 @@ focus_tree = {
 
 		mutually_exclusive = { focus = GER_military_dictatorship }
 		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
 
 		x = 0
 		y = 1
@@ -26863,6 +26878,21 @@ focus_tree = {
 		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
 		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
 		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
 
 		x = 2
 		y = 1
@@ -27071,6 +27101,10 @@ focus_tree = {
 		relative_position_id = GER_realpolitik
 		cost = 10
 		available = {
+			OR = {
+				has_completed_focus = GER_return_of_the_kaiser_ww
+				has_completed_focus = GER_military_dictatorship
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_MANPOWER }
@@ -27596,7 +27630,7 @@ focus_tree = {
 		prerequisite = { focus = GER_the_monarchy_compromise_ww focus = GER_revive_the_kaiserreich_ww }
 
 		x = 1
-		y = 7
+		y = 6
 		relative_position_id = GER_the_monarchy_compromise_ww
 
 		cost = 2
@@ -32946,15 +32980,18 @@ focus_tree = {
 	focus = {
 		id = GER_weltpolitik
 		icon = GFX_focus_GER_weltpolitik
-		prerequisite = { focus = GER_monarchist_sentiment }
 
-		x = 20
-		y = 1
-		relative_position_id = GER_monarchist_sentiment
+		x = 19
+		y = 0
+		relative_position_id = GER_realpolitik
 
 		cost = 5
 
 		available = {
+			OR = {
+				has_completed_focus = GER_the_monarchy_compromise_ww
+				has_completed_focus = GER_revive_the_kaiserreich_ww
+			}
 			is_subject = no
 			NOT = {
 				has_country_leader = {
@@ -33339,7 +33376,7 @@ focus_tree = {
 		id = GER_carte_blanche_for_alsace_and_french_colonies_ww
 		icon = GFX_focus_attack_france
 
-		prerequisite = { focus = GER_anglo_germanic_defense_pact }
+		prerequisite = { focus = GER_demand_the_return_of_southern_jutland }
 
 		mutually_exclusive = { focus = GER_reject_the_locarno_treaty }
 
@@ -33350,6 +33387,8 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			has_completed_focus = GER_anglo_germanic_defense_pact
+
 			is_subject = no
 			has_added_tension_amount > 10
 			NOT = {
@@ -38877,8 +38916,23 @@ focus_tree = {
 		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
 		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
 		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
 
-		x = 4
+		x = 6
 		y = 1
 		relative_position_id = GER_revive_the_kaiserreich_ww
 		cost = 2
@@ -38903,4 +38957,4006 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GER_joseph_habsburg
+		icon = GFX_focus_HUN_the_old_habsburg_king
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 4
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_joseph_habsburg = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							HUN_the_old_warden	
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_karl_albrecht_habsburg
+		icon = GFX_focus_POL_habsburg
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 8
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_karl_albrecht_habsburg = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							patriot_king
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_austria
+		icon = GFX_focus_GER_the_austrian_question
+		prerequisite = { 
+			focus = GER_otto_habsburg
+			focus = GER_joseph_habsburg
+			focus = GER_karl_albrecht_habsburg
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = AUS }
+			AUS = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			AUS = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = AUS
+
+		completion_reward = {
+			AUS = {
+				country_event = {
+					id = wuw_GER_realpolitik.36
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = AUS transfer_troops = yes }
+										
+				GER_anschluss_modify_mefo_bills_or_economy_of_conquest = yes
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = AUS
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_hungary
+		icon = GFX_focus_generic_befriend_hungary
+		prerequisite = {
+			focus = GER_otto_habsburg
+			focus = GER_joseph_habsburg
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = HUN }
+			HUN = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			HUN = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = HUN
+
+		completion_reward = {
+			HUN = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = HUN transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = HUN
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_karl_albrecht_poland
+		icon = GFX_focus_generic_befriend_poland
+		prerequisite = {
+			focus = GER_karl_albrecht_habsburg
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = POL }
+			POL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			POL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = POL
+
+		completion_reward = {
+			POL = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = POL transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = POL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_czechoslovakia
+		icon = GFX_focus_GER_integrate_czechoslovakia
+		prerequisite = { focus = GER_habsburg_austria }
+		prerequisite = { 
+			focus = GER_habsburg_hungary 
+			focus = GER_karl_albrecht_poland
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = GER_otto_habsburg
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = CZE }
+			CZE = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			CZE = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = CZE
+
+		completion_reward = {
+			CZE = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = CZE transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = CZE
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_galicia
+		icon = GFX_focus_generic_attack_poland
+		prerequisite = { focus = GER_habsburg_austria }
+		prerequisite = { focus = GER_habsburg_hungary }
+
+		x = -2
+		y = 2
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = POL
+				generator = { 88 89 91 }
+			}
+
+			add_state_claim = 88
+			add_state_claim = 89
+			add_state_claim = 91
+		}
+	}
+
+	focus = {
+		id = GER_karl_albrecht_hungary
+		icon = GFX_focus_generic_attack_hungary
+		prerequisite = { focus = GER_karl_albrecht_poland }
+
+		x = 2
+		y = 2
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		will_lead_to_war_with = HUN
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HUN
+				generator = { 43 154 155 973 974 }
+			}
+
+			add_state_core = 43
+			add_state_core = 154
+			add_state_core = 155
+			add_state_core = 973
+			add_state_core = 974
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_triple_monarchy
+		icon = GFX_focus_YUG_banovina_of_croatia
+		prerequisite = { focus = GER_habsburg_czechoslovakia }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 45.controller
+				generator = {
+					45
+					102
+					103
+					109
+					764
+					853
+				}
+			}
+
+			add_state_claim = 45 
+			add_state_claim = 102 
+			add_state_claim = 103 
+			add_state_claim = 109 
+			add_state_claim = 764 
+			add_state_claim = 853
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_transylvania
+		icon = GFX_focus_YUG_autonomous_transylvania
+		prerequisite = { focus = GER_habsburg_czechoslovakia }
+
+		x = 2
+		y = 3
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 76.controller
+				generator = { 76 82 83 84 }
+			}
+
+			add_state_claim = 76 
+			add_state_claim = 82 
+			add_state_claim = 83 
+			add_state_claim = 84 
+
+			create_wargoal = {
+				type = take_state_focus
+				target = 80.controller
+				generator = { 80 }
+			}
+
+			add_state_claim = 80
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_south_tyrol
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = GER_habsburg_czechoslovakia }
+
+		x = -2
+		y = 3
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 39.controller
+				generator = { 39 850 }
+			}
+
+			add_state_core = 39
+			add_state_core = 850
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_empire
+		icon = GFX_focus_AUS_proclaim_austrian_empire
+		prerequisite = { focus = GER_habsburg_triple_monarchy }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_otto_habsburg
+		cost = 10
+
+		available = {
+			is_subject = no
+			
+			AND = {
+				owns_state = 4
+				owns_state = 152
+				owns_state = 153
+				owns_state = 848
+				owns_state = 975
+				owns_state = 976
+
+				owns_state = 43
+				owns_state = 154
+				owns_state = 155
+				owns_state = 973
+				owns_state = 974
+
+				owns_state = 9 
+				owns_state = 69 
+				owns_state = 70 
+				owns_state = 71 
+				owns_state = 72 
+				owns_state = 73 
+				owns_state = 74 
+				owns_state = 75 
+				owns_state = 664 
+				owns_state = 972
+
+				owns_state = 39
+				owns_state = 850
+
+				owns_state = 88
+				owns_state = 89
+				owns_state = 91
+
+				owns_state = 45
+				owns_state = 102
+				owns_state = 103
+				owns_state = 109
+				owns_state = 764
+				owns_state = 853
+
+				owns_state = 76
+				owns_state = 82
+				owns_state = 83
+				owns_state = 84
+
+				owns_state = 80
+
+				owns_state = 104 
+				owns_state = 804
+			}
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			set_cosmetic_tag = GER_habsburg
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 88
+			add_state_core = 89
+			add_state_core = 91
+
+			add_state_core = 45 
+			add_state_core = 102 
+			add_state_core = 103 
+			add_state_core = 109 
+			add_state_core = 764 
+			add_state_core = 853
+
+			add_state_core = 76 
+			add_state_core = 82 
+			add_state_core = 83 
+			add_state_core = 84 
+
+			add_state_core = 80
+
+			add_state_core = 104
+			add_state_core = 804
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_bosnia
+		icon = GFX_focus_YUG_safeguard_bosnia
+		prerequisite = { focus = GER_habsburg_triple_monarchy }
+
+		x = 2
+		y = 4
+		relative_position_id = GER_otto_habsburg
+		cost = 2
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		will_lead_to_war_with = YUG
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 104.controller
+				generator = { 104 804 }
+			}
+
+			add_state_claim = 104 
+			add_state_claim = 804
+		}
+	}
+
+	focus = {
+		id = GER_habsburg_adriatic_expansions
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = GER_habsburg_triple_monarchy }
+
+		x = -2
+		y = 4
+		relative_position_id = GER_otto_habsburg
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 736.controller
+				generator = { 160 163 736 852 }
+			}
+
+			add_state_claim = 160 
+			add_state_claim = 163
+			add_state_claim = 736
+			add_state_claim = 852
+
+			create_wargoal = {
+				type = take_state_focus
+				target = 105.controller
+				generator = { 105 }
+			}
+
+			add_state_claim = 105
+		}
+	}
+
+	focus = {
+		id = GER_michael_hohenzollern
+		icon = GFX_focus_rom_coup
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 10
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_michael_hohenzollern = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+										
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_michael_romania
+		icon = GFX_focus_invite_romania
+		prerequisite = { focus = GER_michael_hohenzollern }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_michael_hohenzollern
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = ROM }
+			ROM = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			ROM = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = ROM
+
+		completion_reward = {
+			ROM = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = ROM transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ROM
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_michael_bulgaria
+		icon = GFX_focus_generic_attack_bulgaria
+		prerequisite = { focus = GER_michael_romania }
+
+		x = 0
+		y = 2
+		relative_position_id = GER_michael_hohenzollern
+		cost = 5
+
+		available = {
+			is_subject = no
+
+			owns_state = 46 
+			owns_state = 76 
+			owns_state = 77 
+			owns_state = 78 
+			owns_state = 79 
+			owns_state = 81 
+			owns_state = 82 
+			owns_state = 83 
+			owns_state = 84 
+			owns_state = 766
+			owns_state = 971
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BUL
+				generator = { 48 211 212 801 }
+			}
+
+			add_state_core = 48
+			add_state_core = 211
+			add_state_core = 212
+			add_state_core = 801
+		}
+	}
+
+	focus = {
+		id = GER_michael_carpatho_ukraine
+		icon = GFX_focus_HUN_demand_carpathian_ruthenia
+
+		prerequisite = { focus = GER_michael_bulgaria }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_michael_hohenzollern
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			CZE = {
+				country_event = {
+					id = em_GER.4
+					hours = 6
+					random_hours = 12
+				}
+			}
+			POL = {
+				country_event = {
+					id = em_GER.5
+					hours = 6
+					random_hours = 12
+				}
+			}
+
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+
+				GER = {
+					set_autonomy = {
+						target = UKR
+						autonomy_state = autonomy_puppet
+					}
+				}
+
+				UKR = {
+					transfer_state = 73
+					transfer_state = 80
+					transfer_state = 88
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+
+					add_state_core = 88
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = POL
+					generator = { 88 89 91 }
+				}
+
+				create_wargoal = {
+					type = take_state_focus
+					target = CZE
+					generator = { 73 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_michael_big_romania
+		icon = GFX_goal_generic_political_pressure	
+
+		prerequisite = { focus = GER_michael_carpatho_ukraine }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_michael_hohenzollern
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			has_subject = UKR
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = GER_big_romania
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			create_wargoal = {
+				type = take_state_focus
+				target = 154.controller
+				generator = { 154 }
+			}
+
+			add_state_core = 154
+
+			create_wargoal = {
+				type = take_state_focus
+				target = 764.controller
+				generator = { 764 }
+			}
+
+			add_state_core = 764
+
+			SOV = {
+				country_event = {
+					id = em_GER.8
+					hours = 6
+					random_hours = 12
+				}
+			}
+
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+
+				every_state = {
+					limit = {
+						is_core_of = UKR
+					}
+
+					UKR = {
+						transfer_state = PREV
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = SOV
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_child_simeon
+		icon = GFX_focus_BUL_the_third_bulgarian_empire
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 12
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_child_simeon = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							underage_monarch
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_simeon_bulgaria
+		icon = GFX_focus_generic_befriend_bulgaria
+		prerequisite = { focus = GER_child_simeon }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_child_simeon
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = BUL }
+			BUL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			BUL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = BUL
+
+		completion_reward = {
+			BUL = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = BUL transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = BUL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_simeon_prussia_of_balkans
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+		prerequisite = { focus = GER_simeon_bulgaria }
+
+		x = 0
+		y = 2
+		relative_position_id = GER_child_simeon
+		cost = 5
+
+		available = {
+			is_subject = no
+			
+			owns_state = 48
+			owns_state = 211
+			owns_state = 212
+			owns_state = 801
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			ROM = {
+				country_event = {
+					id = em_GER.9
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			add_state_core = 77
+			add_state_core = 971
+			
+			YUG = {
+				country_event = {
+					id = em_GER.10
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			add_state_core = 106
+			add_state_core = 803
+
+			GRE = {
+				country_event = {
+					id = em_GER.11
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			add_state_core = 184
+			add_state_core = 731
+		}
+	}
+
+	focus = {
+		id = GER_simeon_balkan_expansions
+		icon = GFX_focus_BUL_the_fate_of_the_balkans
+		prerequisite = { focus = GER_simeon_prussia_of_balkans }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_child_simeon
+		cost = 5
+
+		available = {
+			is_subject = no
+			
+			owns_state = 77
+			owns_state = 971
+			owns_state = 106
+			owns_state = 803
+			owns_state = 184
+			owns_state = 731
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRE
+				generator = { 47 185 186}
+			}
+			add_state_claim = 47
+			add_state_claim = 185
+			add_state_claim = 186
+
+			create_wargoal = {
+				type = take_state_focus
+				target = YUG
+				generator = { 105 108 802 970 }
+			}
+			add_state_claim = 105
+			add_state_claim = 108
+			add_state_claim = 802
+			add_state_claim = 970
+
+			create_wargoal = {
+				type = take_state_focus
+				target = ALB
+				generator = { 44 805 934 }
+			}
+			add_state_claim = 44
+			add_state_claim = 805
+			add_state_claim = 934
+		}
+	}
+
+	focus = {
+		id = GER_simeon_bosporus
+		icon = GFX_focus_BUL_supremacy_on_the_bosporus
+		prerequisite = { focus = GER_simeon_balkan_expansions }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_child_simeon
+		cost = 5
+
+		available = {
+			is_subject = no
+			
+			owns_state = 47
+			owns_state = 185
+			owns_state = 186
+			owns_state = 105
+			owns_state = 108
+			owns_state = 802
+			owns_state = 970
+			owns_state = 44
+			owns_state = 805
+			owns_state = 934
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			set_cosmetic_tag = GER_bosporus
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 47
+			add_state_core = 185
+			add_state_core = 186
+			add_state_core = 105
+			add_state_core = 108
+			add_state_core = 802
+			add_state_core = 970
+			add_state_core = 44
+			add_state_core = 805
+			add_state_core = 934
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			create_wargoal = {
+				type = take_core_state
+				target = TUR
+			}
+			add_state_core = 341
+			add_state_core = 797
+		}
+	}
+
+	focus = {
+		id = GER_child_peter
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 14
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_child_peter = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							underage_monarch
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_peter_yugoslavia
+		icon = GFX_focus_invite_yugoslavia
+		prerequisite = { focus = GER_child_peter }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_child_peter
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = YUG }
+			YUG = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			YUG = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = YUG
+
+		completion_reward = {
+			YUG = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = YUG transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = YUG
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_peter_bulgaria
+		icon = GFX_focus_generic_attack_bulgaria
+		prerequisite = { focus = GER_peter_yugoslavia }
+
+		x = 0
+		y = 2
+		relative_position_id = GER_child_peter
+		cost = 5
+
+		available = {
+			is_subject = no
+
+			owns_state = 45
+			owns_state = 102
+			owns_state = 103
+			owns_state = 104
+			owns_state = 105
+			owns_state = 106
+			owns_state = 107
+			owns_state = 108
+			owns_state = 109
+			owns_state = 764
+			owns_state = 802
+			owns_state = 803
+			owns_state = 804
+			owns_state = 853
+			owns_state = 970
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BUL
+				generator = { 48 211 212 801 }
+			}
+			add_state_core = 48
+			add_state_core = 211
+			add_state_core = 212
+			add_state_core = 801
+		}
+	}
+
+	focus = {
+		id = GER_peter_adriatic_expansions
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = GER_peter_bulgaria }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_child_peter
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 47.controller
+				generator = { 47 184 185 186 731 }
+			}
+			add_state_claim = 47
+			add_state_claim = 184
+			add_state_claim = 185
+			add_state_claim = 186
+			add_state_claim = 731
+
+			create_wargoal = {
+				type = take_state_focus
+				target = 44.controller
+				generator = { 44 805 934 }
+			}
+			add_state_claim = 44
+			add_state_claim = 805
+			add_state_claim = 934
+
+			create_wargoal = {
+				type = take_state_focus
+				target = ITA
+				generator = { 163 736 852 }
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ROM = {
+				country_event = {
+					id = em_GER.16
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				TRA = {
+					transfer_state = 76
+					transfer_state = 82
+					transfer_state = 83
+					transfer_state = 84
+					transfer_state = 764
+				}
+
+				GER = {
+					set_autonomy = {
+						target = TRA
+						autonomy_state = autonomy_puppet
+					}
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = YUG
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_peter_big_yugoslavia
+		icon = GFX_focus_BUL_free_balkan_states
+		prerequisite = { focus = GER_peter_adriatic_expansions }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_child_peter
+		cost = 5
+
+		available = {
+			is_subject = no
+
+			owns_state = 184
+			owns_state = 185
+			owns_state = 731
+			owns_state = 44
+			owns_state = 47
+			owns_state = 186
+			owns_state = 805
+			owns_state = 934
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			set_cosmetic_tag = GER_big_yugoslavia
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 184
+			add_state_core = 185
+			add_state_core = 731
+			add_state_core = 44
+			add_state_core = 47
+			add_state_core = 186
+			add_state_core = 805
+			add_state_core = 934
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			create_wargoal = {
+				type = take_state_focus
+				target = ROM
+				generator = { 46 77 81 971 }
+			}
+			add_state_core = 46
+			add_state_core = 77
+			add_state_core = 81
+			add_state_core = 971
+		}
+	}
+
+	focus = {
+		id = GER_greece_george
+		icon = GFX_focus_GRE_an_orthodox_state
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 16
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_greece_george = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_greece_george_greece
+		icon = GFX_focus_GRE_bedrock_of_balkan_stability
+		prerequisite = { focus = GER_greece_george }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_greece_george
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = GRE }
+			GRE = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			GRE = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = GRE
+
+		completion_reward = {
+			GRE = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = GRE transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = GRE
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_greece_george_turkey
+		icon = GFX_focus_generic_attack_turkey
+		prerequisite = { focus = GER_greece_george_greece }
+
+		x = 0
+		y = 2
+		relative_position_id = GER_greece_george
+		cost = 3
+
+		available = {
+			is_subject = no
+
+			owns_state = 47
+			owns_state = 182
+			owns_state = 184
+			owns_state = 185
+			owns_state = 186
+			owns_state = 187
+			owns_state = 731
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TUR
+			}
+		}
+	}
+
+	focus = {
+		id = GER_reviving_the_double_headed_eagle
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		prerequisite = { focus = GER_greece_george_turkey }
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_greece_george
+		cost = 15
+
+		available = {
+			is_subject = no
+
+			controls_state = 49
+			controls_state = 797
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_ideas = GRE_reviving_the_double_headed_eagle_spirit
+			unlock_decision_tooltip = byz_restore_byzantium
+		}
+	}
+
+	focus = {
+		id = GER_byzantine_themata
+		icon = GFX_focus_GRE_byzantine_themata
+		prerequisite = { focus = GER_reviving_the_double_headed_eagle }
+		
+		x = 0
+		y = 4
+		relative_position_id = GER_greece_george
+		cost = 10
+
+		completion_reward = {
+			unlock_decision_tooltip = byz_triumph_for_the_balkans
+		}
+	}
+
+	focus = {
+		id = GER_wilhelmina
+		icon = GFX_focus_hol_the_only_man_in_the_dutch_government
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 18
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_wilhelmina = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							wilhelmina
+							queen_of_the_people
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_wilhelmina_netherlands
+		icon = GFX_focus_hol_oranje_boven
+		prerequisite = { focus = GER_wilhelmina }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_wilhelmina
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = HOL }
+			HOL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			HOL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = HOL
+
+		completion_reward = {
+			HOL = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = HOL transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = HOL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_wilhelmina_east_indies
+		icon = GFX_focus_generic_annex_country_2
+		prerequisite = { focus = GER_wilhelmina_netherlands }
+		prerequisite = { focus = GER_dietsland }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_wilhelmina
+		cost = 5
+
+		available = {
+			is_subject = no
+
+			owns_state = 7
+			owns_state = 35
+			owns_state = 36
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			INS = {
+				country_event = {
+					id = em_GER.12
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				 GER = {
+					set_autonomy = {
+						target = INS
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = INS
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_dietsland
+		icon = GFX_focus_BEL_dietsland
+		prerequisite = { 
+			focus = GER_wilhelmina_netherlands 
+			focus = GER_belgium_leopold_belgium
+		}
+
+		x = 1
+		y = 2
+		relative_position_id = GER_wilhelmina
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BEL
+				generator = { 6 34 977 980 }
+			}
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 977
+			add_state_core = 980
+
+			create_wargoal = {
+				type = take_state_focus
+				target = LUX
+				generator = { 8 }
+			}
+			add_state_core = 8
+		}
+	}
+
+	focus = {
+		id = GER_wilhelmina_dutch_empire
+		icon = GFX_focus_INS_prioritize_dutch_companies
+		prerequisite = { focus = GER_wilhelmina_east_indies }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_wilhelmina
+		cost = 10
+
+		available = {
+			is_subject = no
+
+			owns_state = 6
+			owns_state = 8
+			owns_state = 34
+			owns_state = 977
+			owns_state = 980
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			set_cosmetic_tag = GER_dutch_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ENG = {
+				country_event = {
+					id = em_GER.13
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			add_state_claim = 308
+			add_state_claim = 336
+			add_state_claim = 422
+			add_state_claim = 423
+			add_state_claim = 681
+			add_state_claim = 687
+			add_state_claim = 692
+			add_state_claim = 719
+			add_state_claim = 982
+			add_state_claim = 1013
+			add_state_claim = 1014
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			FRA = {
+				country_event = {
+					id = em_GER.14
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			add_state_claim = 310
+			add_state_claim = 320
+			add_state_claim = 694
+			add_state_claim = 779
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			BRA = {
+				country_event = {
+					id = em_GER.15
+					hours = 6
+					random_hours = 12
+				}
+			}
+			add_state_claim = 497
+			add_state_claim = 498
+			add_state_claim = 935
+			add_state_claim = 936
+			add_state_claim = 937
+			
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+
+				GER = {
+					transfer_state = 308
+					transfer_state = 336
+					transfer_state = 422
+					transfer_state = 423
+					transfer_state = 681
+					transfer_state = 687
+					transfer_state = 692
+					transfer_state = 719
+					transfer_state = 982
+					transfer_state = 1013
+					transfer_state = 1014
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				GER = {
+					transfer_state = 310
+					transfer_state = 320
+					transfer_state = 694
+					transfer_state = 779
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				GER = {
+					transfer_state = 497
+					transfer_state = 498
+					transfer_state = 935
+					transfer_state = 936
+					transfer_state = 937
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ENG
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = FRA
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = BRA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_belgium_leopold
+		icon = GFX_focus_BEL_leopolds_return
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 20
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_belgium_leopold = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_belgium_leopold_belgium
+		icon = GFX_focus_BEL_independent_neutral_and_loyal
+		prerequisite = { focus = GER_belgium_leopold }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_belgium_leopold
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = BEL }
+			BEL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			BEL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = BEL
+
+		completion_reward = {
+			BEL = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = BEL transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = BEL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_belgium_leopold_congo
+		icon = GFX_focus_CONGO_overseas_department_of_belgium
+		prerequisite = { focus = GER_belgium_leopold_belgium }
+		prerequisite = { focus = GER_dietsland }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_belgium_leopold
+		cost = 5
+
+		available = {
+			is_subject = no
+
+			owns_state = 7
+			owns_state = 35
+			owns_state = 36
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			COG = {
+				country_event = {
+					id = em_GER.12
+					hours = 6
+					random_hours = 12
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+					GER = {
+					set_autonomy = {
+						target = COG
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = COG
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_belgium_leopold_burgundy
+		icon = GFX_focus_BEL_burgundy_rising
+		prerequisite = { focus = GER_belgium_leopold_congo }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_belgium_leopold
+		cost = 10
+
+		available = {
+			is_subject = no
+
+			owns_state = 6
+			owns_state = 8
+			owns_state = 34
+			owns_state = 977
+			owns_state = 980
+
+			COG = {
+				is_subject_of = GER
+			}
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			set_cosmetic_tag = GER_burgundy
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			FRA = {
+				country_event = {
+					id = em_GER.17
+					hours = 6
+					random_hours = 12
+				}	
+			}
+	
+			add_state_core = 17
+			add_state_core = 18
+			add_state_core = 27
+			add_state_core = 28
+			add_state_core = 29
+			add_state_core = 785
+	
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+
+				COG = {
+					transfer_state = 539
+					transfer_state = 660
+					transfer_state = 772
+					transfer_state = 773
+					transfer_state = 774
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				GER = {
+					transfer_state = 17
+					transfer_state = 18
+					transfer_state = 27
+					transfer_state = 28
+					transfer_state = 29
+					transfer_state = 785
+				}
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = FRA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_lit_karl_gero
+		icon = GFX_focus_LIT_king_of_poland
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 22
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_lit_karl_gero = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							LIT_king_of_lithuania
+							POL_soldier_king
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_lit_karl_gero_lithuania
+		icon = GFX_focus_LIT_restore_order
+		prerequisite = { 
+			focus = GER_lit_karl_gero 
+			focus = GER_poland_friedrich_christian
+			focus = GER_pavel_bermondt_avalov
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_lit_karl_gero
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = LIT }
+			LIT = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			LIT = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = LIT
+
+		completion_reward = {
+			LIT = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = LIT transfer_troops = yes }
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = LIT
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_claim_greater_lithuania
+		icon = GFX_focus_LIT_restore_the_grand_duchy
+		prerequisite = { focus = GER_lit_karl_gero_lithuania }
+		prerequisite = { focus = GER_poland_friedrich_christian_poland }
+		relative_position_id = GER_lit_karl_gero
+
+		x = 0
+		y = 2
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			NOT = {
+				has_completed_focus = GER_pavel_bermondt_avalov
+			}
+		}
+
+		completion_reward = {
+			claim_greater_LIT_effect = yes
+			create_wargoal = {
+				type = take_state_focus
+				target = SOV
+				generator = { 96 95 94 207 206 204 241 93 199 201 198 202 203 259 193 225 221 226 197 192 242 243 224 205 223 222 220 240 194 }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_poland_friedrich_christian
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 24
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_poland_friedrich_christian = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							POL_soldier_king
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_poland_friedrich_christian_poland
+		icon = GFX_focus_generic_befriend_poland
+		prerequisite = {
+			focus = GER_poland_friedrich_christian
+			focus = GER_lit_karl_gero
+			focus = GER_pavel_bermondt_avalov
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_poland_friedrich_christian
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = POL }
+			POL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			POL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = POL
+
+		completion_reward = {
+			POL = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = POL transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = POL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_livonia
+		icon = GFX_focus_LIT_claim_livonia
+		prerequisite = { focus = GER_lit_karl_gero_lithuania }
+		prerequisite = { focus = GER_poland_friedrich_christian_poland }
+		relative_position_id = GER_poland_friedrich_christian
+
+		x = 0
+		y = 2
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			LAT = { exists = no }
+			EST = { exists = no }
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					EST = {
+						exists = yes
+						is_subject = no
+						has_war = no
+						NOT = {
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = EST
+				}
+			}
+			if = {
+				limit = {
+					LAT = {
+						exists = yes
+						is_subject = no
+						has_war = no
+						NOT = {
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = LAT
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_core_livonia
+		icon = GFX_focus_LIT_reclaim_courland
+		prerequisite = { focus = GER_livonia }
+		relative_position_id = GER_poland_friedrich_christian
+
+		x = 0
+		y = 3
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			add_state_core = 12
+			add_state_core = 13
+			add_state_core = 190
+			add_state_core = 191
+			add_state_core = 808
+			add_state_core = 809
+			add_state_core = 810
+			add_state_core = 811
+			add_state_core = 812
+			add_state_core = 813
+		}
+	}
+
+	focus = {
+		id = GER_greater_polish_commonwealth
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_core_livonia }
+		prerequisite = { focus = GER_claim_greater_lithuania }
+		relative_position_id = GER_poland_friedrich_christian
+		
+		x = -2
+		y = 4
+		cost = 10
+		
+		available = {
+			controls_state = 96
+			controls_state = 95
+			controls_state = 94
+			controls_state = 207
+			controls_state = 206
+			controls_state = 204
+			controls_state = 241
+			controls_state = 93
+			controls_state = 199
+			controls_state = 201
+			controls_state = 198
+			controls_state = 202
+			controls_state = 203
+			controls_state = 259
+			controls_state = 193
+			controls_state = 225
+			controls_state = 221
+			controls_state = 226
+			controls_state = 197
+			controls_state = 192
+			controls_state = 242
+			controls_state = 243
+			controls_state = 224
+			controls_state = 205
+			controls_state = 223
+			controls_state = 222
+			controls_state = 220
+			controls_state = 240
+			controls_state = 194
+			controls_state = 137
+			controls_state = 5
+			controls_state = 763
+			controls_state = 67
+			controls_state = 66
+			controls_state = 68
+			controls_state = 63
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			set_cosmetic_tag = GER_polish_commonwealth
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = LIT
+						is_core_of = KSH
+						is_core_of = UKR
+						state = 96
+						state = 95
+						state = 94
+						state = 207
+						state = 206
+						state = 204
+						state = 241
+						state = 93
+						state = 199
+						state = 201
+						state = 198
+						state = 202
+						state = 203
+						state = 259
+						state = 193
+						state = 225
+						state = 221
+						state = 226
+						state = 197
+						state = 192
+						state = 242
+						state = 243
+						state = 224
+						state = 205
+						state = 223
+						state = 222
+						state = 220
+						state = 240
+						state = 194
+						state = 137
+						state = 5
+						state = 763
+						state = 67
+						state = 66
+						state = 68
+						state = 63
+					}
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = GER_pavel_bermondt_avalov
+		icon = GFX_focus_POL_cossack_king
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 26
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_pavel_bermondt_avalov = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							POL_cossack_king
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_pavel_slovakia
+		icon = GFX_focus_CZE_slovak_independence
+		prerequisite = { focus = GER_pavel_bermondt_avalov }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_pavel_bermondt_avalov
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = CZE }
+			CZE = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			CZE = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = CZE
+
+		completion_reward = {
+			add_state_core = 70
+			add_state_core = 71
+			add_state_core = 72
+			add_state_core = 73
+			add_state_core = 664
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			CZE = {
+				country_event = {
+					id = em_GER.18
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 70
+					transfer_state = 71
+					transfer_state = 72
+					transfer_state = 73
+					transfer_state = 664
+
+				}
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = CZE
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_pavel_ukraine
+		icon = GFX_focus_HUN_the_kingdom_of_ukraine
+
+		prerequisite = { focus = GER_pavel_slovakia }
+
+		x = 0
+		y = 2
+		relative_position_id = GER_pavel_bermondt_avalov
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			SOV = {
+				country_event = {
+					id = em_GER.19
+					hours = 6
+					random_hours = 12
+				}
+			}
+
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+
+				every_state = {
+					limit = {
+						is_core_of = UKR
+
+						NOT = {
+							state = 73
+							state = 80
+							state = 89
+							state = 91
+							state = 93
+							state = 766
+						}
+					}
+
+					UKR = {
+						transfer_state = PREV
+					}
+				}
+
+				GER = {
+					set_autonomy = {
+						target = UKR
+						autonomy_state = autonomy_puppet
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = SOV
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_pavel_russia
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = GER_pavel_ukraine }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_pavel_bermondt_avalov
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			has_wargoal_against = SOV
+		}
+
+		dynamic = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SOV
+			}
+		}
+	}
+
+	focus = {
+		id = GER_complete_the_bermontian_mission
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_pavel_russia }
+		prerequisite = { focus = GER_core_livonia }
+		relative_position_id = GER_pavel_bermondt_avalov
+
+		x = 0
+		y = 4
+		cost = 10
+		
+		available = {
+			is_subject = no
+
+			owns_state = 217
+			owns_state = 218
+			owns_state = 238
+			owns_state = 245
+			owns_state = 265
+
+			owns_state = 232
+			owns_state = 233
+			owns_state = 234
+			owns_state = 235
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = GER_pavel_bermontian
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			GER = {
+				country_event = {
+					id = pavel_events.1
+				}
+				country_event = {
+					id = pavel_events.2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_norway_haakon_vii
+		icon = GFX_focus_NOR_the_kingdom_of_norway
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 28
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_norway_haakon_vii = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_norway_haakon_norway
+		icon = GFX_focus_generic_befriend_norway
+		prerequisite = {
+			focus = GER_norway_haakon_vii
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_norway_haakon_vii
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = NOR }
+			NOR = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			NOR = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = NOR
+
+		completion_reward = {
+			NOR = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = NOR transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = NOR
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_norway_haakon_sweden
+		icon = GFX_focus_generic_attack_sweden
+		prerequisite = { focus = GER_norway_haakon_norway }
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_norway_haakon_vii
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 110
+			owns_state = 142
+			owns_state = 143
+			owns_state = 144
+			owns_state = 920
+			owns_state = 921
+			owns_state = 922
+			owns_state = 923
+			owns_state = 924
+			owns_state = 925
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SWE
+			}
+			add_state_core = 138
+			add_state_core = 139
+			add_state_core = 140
+			add_state_core = 915
+		}
+	}
+
+	focus = {
+		id = GER_norway_haakon_finland
+		icon = GFX_focus_generic_attack_finland
+		prerequisite = { 
+			focus = GER_norway_haakon_sweden 
+			focus = GER_sweden_gustaf_narvik_crisis
+			focus = GER_denmark_christian_sweden
+		}
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_norway_haakon_vii
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = FIN
+				generator = { 148 }
+			}
+			add_state_core = 148
+		}
+	}
+
+	focus = {
+		id = GER_sweden_gustaf_v
+		icon = GFX_focus_SWE_meet_with_the_king
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 30
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_sweden_gustaf_v = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							SWE_ardent_conservative
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_sweden_gustaf_sweden
+		icon = GFX_focus_generic_befriend_sweden
+		prerequisite = {
+			focus = GER_sweden_gustaf_v
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_sweden_gustaf_v
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = SWE }
+			SWE = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			SWE = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = SWE
+
+		completion_reward = {
+			SWE = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = SWE transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = SWE
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_sweden_gustaf_narvik_crisis
+		icon = GFX_focus_NOR_weathering_the_storm_to_come
+		prerequisite = { focus = GER_sweden_gustaf_sweden }
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_sweden_gustaf_v
+		cost = 5
+		
+		available = {
+			is_subject = no
+			OR = {
+				144 = { is_fully_controlled_by = NOR }
+				925 = { is_fully_controlled_by = NOR }
+				924 = { is_fully_controlled_by = NOR }
+			}
+
+			owns_state = 38
+			owns_state = 138
+			owns_state = 139
+			owns_state = 140
+			owns_state = 141
+			owns_state = 666
+			owns_state = 913
+			owns_state = 915
+			owns_state = 916
+			owns_state = 917
+			owns_state = 918
+			owns_state = 919
+		}
+
+		bypass = {
+			AND = {
+				144 = { is_fully_controlled_by = SWE }
+				925 = { is_fully_controlled_by =  SWE }
+				924 = { is_fully_controlled_by =  SWE }
+			}
+		}
+
+		completion_reward = {
+			add_state_core = 144
+			add_state_core = 924
+			add_state_core = 925
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			NOR = {
+				country_event = {
+					id = em_GER.20
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 144
+					transfer_state = 924
+					transfer_state = 925
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = NOR
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_sweden_gustaf_denmark
+		icon = GFX_focus_generic_attack_denmark
+		prerequisite = { 
+			focus = GER_sweden_gustaf_narvik_crisis 
+			focus = GER_norway_haakon_sweden
+		}
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_sweden_gustaf_v
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = DEN
+				generator = { 37 99 101 337 910 911 912 }
+			}
+			add_state_core = 37
+			add_state_core = 99
+			add_state_core = 101
+			add_state_core = 337
+			add_state_core = 910
+			add_state_core = 911
+			add_state_core = 912
+		}
+	}
+
+	focus = {
+		id = GER_sweden_gustaf_empire
+		icon = GFX_focus_SWE_the_nordic_defense_council
+
+		prerequisite = { 
+			focus = GER_sweden_gustaf_denmark 
+			focus = GER_norway_haakon_finland 
+			focus = GER_denmark_christian_norway 
+		}
+		mutually_exclusive = { focus = GER_denmark_christian_empire }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_sweden_gustaf_v
+		cost = 10
+		
+		available = {
+			is_subject = no
+
+			owns_state = 37
+			owns_state = 99
+			owns_state = 101
+			owns_state = 337
+			owns_state = 910
+			owns_state = 911
+			owns_state = 912
+
+			controls_state = 148
+			controls_state = 722
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = GER_nordic_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SWE
+						is_core_of = NOR
+						is_core_of = DEN
+						is_core_of = FIN
+					}
+				}
+
+				add_core_of = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = GER_denmark_christian_x
+		icon = GFX_focus_DEN_the_king_assumes_power
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+
+		x = 32
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_denmark_christian_x = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							DEN_the_king
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_denmark_christian_denmark
+		icon = GFX_focus_generic_befriend_denmark
+		prerequisite = {
+			focus = GER_denmark_christian_x
+			focus = GER_iceland_knud
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_denmark_christian_x
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = DEN }
+			DEN = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			DEN = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = DEN
+
+		completion_reward = {
+			DEN = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = DEN transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = DEN
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_denmark_christian_sweden
+		icon = GFX_focus_generic_invade_sweden
+		prerequisite = { focus = GER_denmark_christian_denmark }
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_denmark_christian_x
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			has_completed_focus = GER_denmark_christian_x
+
+			owns_state = 37
+			owns_state = 99
+			owns_state = 101
+			owns_state = 337
+			owns_state = 910
+			owns_state = 911
+			owns_state = 912
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SWE
+			}
+			add_state_core = 38
+			add_state_core = 138
+			add_state_core = 139
+			add_state_core = 140
+			add_state_core = 141
+			add_state_core = 666
+			add_state_core = 913
+			add_state_core = 915
+			add_state_core = 916
+			add_state_core = 917
+			add_state_core = 918
+			add_state_core = 919
+		}
+	}
+
+	focus = {
+		id = GER_denmark_christian_norway
+		icon = GFX_focus_generic_attack_norway
+		prerequisite = { 
+			focus = GER_denmark_christian_sweden
+			focus = GER_sweden_gustaf_narvik_crisis
+		}
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_denmark_christian_x
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = NOR
+			}
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 920
+			add_state_core = 921
+			add_state_core = 922
+		}
+	}
+
+	focus = {
+		id = GER_denmark_christian_empire
+		icon = GFX_focus_DEN_danish_freedom
+
+		prerequisite = { focus = GER_denmark_christian_norway }
+		prerequisite = { focus = GER_iceland_knud_england }
+		mutually_exclusive = { focus = GER_sweden_gustaf_empire }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_denmark_christian_x
+		cost = 10
+		
+		available = {
+			is_subject = no
+
+			owns_state = 123
+			owns_state = 125
+			owns_state = 126
+			owns_state = 127
+			owns_state = 128
+			owns_state = 129
+			owns_state = 130
+			owns_state = 131
+			owns_state = 132
+			owns_state = 338
+			owns_state = 931
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = GER_denmark_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 123
+			add_state_core = 125
+			add_state_core = 126
+			add_state_core = 127
+			add_state_core = 128
+			add_state_core = 129
+			add_state_core = 130
+			add_state_core = 131
+			add_state_core = 132
+			add_state_core = 338
+			add_state_core = 931
+		}
+	}
+
+	focus = {
+		id = GER_iceland_knud
+		icon = GFX_focus_ICE_the_kingdom_of_iceland
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+
+		x = 34
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_iceland_knud = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_iceland_knud_iceland
+		icon = GFX_focus_generic_befriend_iceland
+		prerequisite = {
+			focus = GER_iceland_knud
+			focus = GER_denmark_christian_x
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_iceland_knud
+		cost = 3
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = ICE }
+			ICE = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			ICE = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = ICE
+
+		completion_reward = {
+			ICE = {
+				country_event = {
+					id = em_GER.1
+					hours = 6
+					random_hours = 12
+				}
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = ICE transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ICE
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_iceland_knud_securing_the_north_sea_passage
+		icon = GFX_focus_ICE_securing_the_north_sea_passage
+		prerequisite = { focus = GER_iceland_knud_iceland }
+
+		x = 0
+		y = 2
+		relative_position_id = GER_iceland_knud
+		cost = 5
+		available = {
+			is_subject = no
+
+			has_completed_focus = GER_iceland_knud
+		}
+
+		completion_reward = {
+			337 = {
+				add_claim_by = ROOT
+			}
+			933 = {
+				add_claim_by = ROOT
+			}
+			914 = {
+				add_claim_by = ROOT
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						owns_state = 337
+						owns_state = 933
+						owns_state = 914
+					}
+				}
+				country_event = {
+					id = iceland_events.23
+					hours = 1 
+					random_hours = 2 
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			331 = {
+				add_claim_by = ROOT
+			}
+			730 = {
+				add_claim_by = ROOT
+			}
+			332 = {
+				add_claim_by = ROOT
+			}
+			860 = {
+				add_claim_by = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = GER_iceland_knud_england
+		icon = GFX_focus_DEN_danelaw
+		prerequisite = { 
+			focus = GER_denmark_christian_sweden
+			focus = GER_iceland_knud_securing_the_north_sea_passage
+		}
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_iceland_knud
+		cost = 8
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+			}
+			add_state_claim = 123
+			add_state_claim = 125
+			add_state_claim = 126
+			add_state_claim = 127
+			add_state_claim = 128
+			add_state_claim = 129
+			add_state_claim = 130
+			add_state_claim = 131
+			add_state_claim = 132
+			add_state_claim = 338
+			add_state_claim = 931
+		}
+	}
+
+	focus = {
+		id = GER_iceland_knud_viking_spirit
+		icon = GFX_focus_ICE_the_viking_spirit
+		prerequisite = { focus = GER_iceland_knud_england }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_iceland_knud
+		cost = 10
+		available = { 
+			is_subject = no 
+
+			has_completed_focus = GER_iceland_knud
+
+			owns_state = 123
+			owns_state = 125
+			owns_state = 126
+			owns_state = 127
+			owns_state = 128
+			owns_state = 129
+			owns_state = 130
+			owns_state = 131
+			owns_state = 132
+			owns_state = 338
+			owns_state = 931
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = GER_viking_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = ICE_viking_spirit 
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 123
+			add_state_core = 125
+			add_state_core = 126
+			add_state_core = 127
+			add_state_core = 128
+			add_state_core = 129
+			add_state_core = 130
+			add_state_core = 131
+			add_state_core = 132
+			add_state_core = 338
+			add_state_core = 931
+
+			add_state_core = 337
+			add_state_core = 914
+			add_state_core = 933
+
+			add_state_core = 331
+			add_state_core = 332
+			add_state_core = 730
+			add_state_core = 860
+		}
+	}
+
+	focus = {
+		id = GER_dummy
+
+		x = 50
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+	}
 }

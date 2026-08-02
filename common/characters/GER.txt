@@ -151,11 +151,148 @@ characters = {
 		}
 	}
 
+	# EXTENDED MONARCH PEOPLE
+
 	GER_otto_habsburg = {
 		name = GER_otto_habsburg
 		portraits = {
 			civilian = {
 				large = "GFX_Portrait_hungary_otto_von_hapsburg"
+			}
+		}
+	}
+
+	GER_joseph_habsburg = {
+		name = GER_joseph_habsburg
+		portraits = {
+			civilian = {
+				large = GFX_portrait_HUN_joseph_august_von_habsburg
+			}
+		}
+	}
+
+	GER_karl_albrecht_habsburg = {
+		name = GER_karl_albrecht_habsburg
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_karl_albrecht"
+			}
+		}
+	}
+
+	GER_michael_hohenzollern = {
+		name = GER_michael_hohenzollern
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_romania_michael_i"
+			}
+		}
+	}
+
+	GER_child_simeon = {
+		name = GER_child_simeon
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_bul_regency_council"
+			}
+		}
+	}
+
+	GER_child_peter={
+		name = GER_child_peter
+		portraits = {
+			civilian = {
+				large="GFX_portrait_yugoslavia_peter_ii_young"
+			}
+		}
+	}
+
+	GER_greece_george = {
+		name = GER_greece_george
+		portraits = {
+			civilian = {
+				large = GFX_portrait_gre_george_ii
+			}
+		}
+	}
+
+	GER_wilhelmina = {
+		name = GER_wilhelmina
+		portraits={
+			civilian={
+				large="GFX_portrait_HOL_wilhelmina"
+			}
+		}
+	}
+
+	GER_belgium_leopold = {
+		name = GER_belgium_leopold
+		portraits={
+			civilian={
+				large = GFX_portrait_BEL_king_leopold_iii 
+			}
+		}
+	}
+
+	GER_lit_karl_gero={
+		name=GER_lit_karl_gero
+		portraits={
+			civilian={
+				large="GFX_portrait_LIT_karl_gero_von_urach"
+			}
+		}
+	}
+
+	GER_poland_friedrich_christian = {
+		name=GER_poland_friedrich_christian
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_friedrich_christian"
+			}
+		}
+	}
+
+	GER_pavel_bermondt_avalov = {
+		name=GER_pavel_bermondt_avalov
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_pavel_bermondt_avlov"
+			}
+		}
+	}
+
+	GER_denmark_christian_x = {
+		name = GER_denmark_christian_x
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DEN_christian_x
+			}
+		}
+	}
+
+	GER_sweden_gustaf_v = {
+		name=GER_sweden_gustaf_v
+		portraits={
+			civilian={
+				large = "GFX_portrait_SWE_king_gustaf_v"
+			}
+		}
+	}
+
+	GER_norway_haakon_vii = {
+		name = GER_norway_haakon_vii
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NOR_king_haakon_vii
+			}
+		}
+	}
+
+	GER_iceland_knud = {
+		name = GER_iceland_knud
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ICE_king_knud
 			}
 		}
 	}
