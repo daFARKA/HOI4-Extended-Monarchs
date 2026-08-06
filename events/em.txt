@@ -1,16 +1,16 @@
-add_namespace = em_GER
+add_namespace = em
 
 # Germany proposes unification
 country_event = { 
-	id = em_GER.1
-	title = em_GER.1.t
-	desc = em_GER.1.desc
+	id = em.1
+	title = em.1.t
+	desc = em.1.desc
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
 	option = { 
-		name = em_GER.1.a
+		name = em.1.a
 		ai_chance = {
 			base = 20
 			modifier = {
@@ -35,7 +35,7 @@ country_event = {
 
 		FROM = { # FROM Accepts
 			country_event = { 
-				id = em_GER.2
+				id = em.2
 				hours = 5 
 				random_hours = 6
 			}
@@ -62,7 +62,7 @@ country_event = {
 
 	# We will not compromise on our independence!
 	option = {
-		name = em_GER.1.b
+		name = em.1.b
 		ai_chance = {
 			base = 2
 			modifier = {
@@ -102,7 +102,7 @@ country_event = {
 
 		FROM = { # FROM Rejects
 			country_event = {
-				id = em_GER.3
+				id = em.3
 				hours = 5 
 				random_hours = 6
 			}
@@ -111,17 +111,17 @@ country_event = {
 	}
 }
 
-# [FROM.GetNameDefCap] Accepts our offer - event for GER
+# [FROM.GetNameDefCap] Accepts our offer - event for FROM
 country_event = { 
-	id = em_GER.2
-	title = em_GER.2.t
-	desc = em_GER.2.desc
+	id = em.2
+	title = em.2.t
+	desc = em.2.desc
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
 	option = { # A great day for the [ROOT.GetAdjective] nation!
-		name = em_GER.2.a  
+		name = em.2.a  
 		
 		annex_country = {
 			target = FROM
@@ -138,18 +138,18 @@ country_event = {
 	}
 }
 
-# [FROM.GetNameDefCap] Rejects our offer - event for GER
+# [FROM.GetNameDefCap] Rejects our offer - event for FROM
 country_event = { 
-	id = em_GER.3
-	title = em_GER.3.t
-	desc = em_GER.3.desc 
+	id = em.3
+	title = em.3.t
+	desc = em.3.desc 
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	# In that case we must respect their wishes
 	option = { 
-		name = em_GER.3.a	
+		name = em.3.a	
 		ai_chance = {
 			base = 10
 		}
@@ -160,7 +160,7 @@ country_event = {
 
 	# [FROM.GetNameDefCap] is [ROOT.GetAdjective]!
 	option = { 
-		name = em_GER.3.b	
+		name = em.3.b	
 		ai_chance = {
 			base = 90
 		}
@@ -181,15 +181,15 @@ country_event = {
 }
 
 country_event = {
-    id = em_GER.4
+    id = em.4
 
-    title = em_GER.4.t
-    desc = em_GER.4.d
+    title = em.4.t
+    desc = em.4.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.4.a
+        name = em.4.a
 
         ai_chance = {
             base = 10
@@ -218,17 +218,17 @@ country_event = {
             transfer_state = 80
         }
 
-        GER = {
+        FROM = {
 			set_autonomy = {
 				target = UKR
 				autonomy_state = autonomy_puppet
 			}
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.4.b
+        name = em.4.b
 
         ai_chance = {
             base = 2
@@ -263,22 +263,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.5
+    id = em.5
 
-    title = em_GER.5.t
-    desc = em_GER.5.d
+    title = em.5.t
+    desc = em.5.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.5.a
+        name = em.5.a
 
         ai_chance = {
             base = 10
@@ -311,17 +311,17 @@ country_event = {
 			add_state_core = 88
         }
 
-        GER = {
+        FROM = {
 			set_autonomy = {
 				target = UKR
 				autonomy_state = autonomy_puppet
 			}
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.5.b
+        name = em.5.b
 
         ai_chance = {
             base = 2
@@ -356,22 +356,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = { 
-	id = em_GER.6
-	title = em_GER.6.t
-	desc = em_GER.6.desc 
+	id = em.6
+	title = em.6.t
+	desc = em.6.desc 
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	option = { 
-		name = em_GER.6.a
+		name = em.6.a
 
 		add_stability = 0.1
 		add_political_power = 50
@@ -379,16 +379,16 @@ country_event = {
 }
 
 country_event = { 
-	id = em_GER.7
-	title = em_GER.7.t
-	desc = em_GER.7.desc 
+	id = em.7
+	title = em.7.t
+	desc = em.7.desc 
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	# In that case we must respect their wishes
 	option = { 
-		name = em_GER.7.a	
+		name = em.7.a	
 		ai_chance = {
 			base = 10
 		}
@@ -399,7 +399,7 @@ country_event = {
 
 	# [FROM.GetNameDefCap] is [ROOT.GetAdjective]!
 	option = { 
-		name = em_GER.7.b
+		name = em.7.b
 		ai_chance = {
 			base = 90
 		}
@@ -412,15 +412,15 @@ country_event = {
 }
 
 country_event = {
-    id = em_GER.8
+    id = em.8
 
-    title = em_GER.8.t
-    desc = em_GER.8.d
+    title = em.8.t
+    desc = em.8.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.8.a
+        name = em.8.a
 
         ai_chance = {
             base = 10
@@ -454,13 +454,13 @@ country_event = {
 			}
 		}
 
-        GER = {
-            country_event = { id = em_GER.6 }
+        FROM = {
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.8.b
+        name = em.8.b
 
         ai_chance = {
             base = 2
@@ -495,22 +495,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.9
+    id = em.9
 
-    title = em_GER.9.t
-    desc = em_GER.9.d
+    title = em.9.t
+    desc = em.9.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.9.a
+        name = em.9.a
 
         ai_chance = {
             base = 10
@@ -534,16 +534,16 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			transfer_state = 77
 			transfer_state = 971
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.9.b
+        name = em.9.b
 
         ai_chance = {
             base = 2
@@ -578,22 +578,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.10
+    id = em.10
 
-    title = em_GER.10.t
-    desc = em_GER.10.d
+    title = em.10.t
+    desc = em.10.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.10.a
+        name = em.10.a
 
         ai_chance = {
             base = 10
@@ -617,16 +617,16 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			transfer_state = 106
 			transfer_state = 803
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.10.b
+        name = em.10.b
 
         ai_chance = {
             base = 2
@@ -661,22 +661,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.11
+    id = em.11
 
-    title = em_GER.11.t
-    desc = em_GER.11.d
+    title = em.11.t
+    desc = em.11.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.11.a
+        name = em.11.a
 
         ai_chance = {
             base = 10
@@ -700,16 +700,16 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			transfer_state = 184
 			transfer_state = 731
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.11.b
+        name = em.11.b
 
         ai_chance = {
             base = 2
@@ -744,22 +744,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.12
+    id = em.12
 
-    title = em_GER.12.t
-    desc = em_GER.12.d
+    title = em.12.t
+    desc = em.12.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.12.a
+        name = em.12.a
 
         ai_chance = {
             base = 10
@@ -783,18 +783,18 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			set_autonomy = {
 				target = ROOT
 				autonomy_state = autonomy_integrated_puppet
 			}
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.12.b
+        name = em.12.b
 
         ai_chance = {
             base = 2
@@ -829,22 +829,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.13
+    id = em.13
 
-    title = em_GER.13.t
-    desc = em_GER.13.d
+    title = em.13.t
+    desc = em.13.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.13.a
+        name = em.13.a
 
         ai_chance = {
             base = 10
@@ -868,7 +868,7 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			transfer_state = 308
 			transfer_state = 336
 			transfer_state = 422
@@ -881,12 +881,12 @@ country_event = {
 			transfer_state = 1013
 			transfer_state = 1014
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.13.b
+        name = em.13.b
 
         ai_chance = {
             base = 2
@@ -921,22 +921,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.14
+    id = em.14
 
-    title = em_GER.14.t
-    desc = em_GER.14.d
+    title = em.14.t
+    desc = em.14.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.14.a
+        name = em.14.a
 
         ai_chance = {
             base = 10
@@ -960,18 +960,18 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			transfer_state = 310
 			transfer_state = 320
 			transfer_state = 694
 			transfer_state = 779
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.14.b
+        name = em.14.b
 
         ai_chance = {
             base = 2
@@ -1006,22 +1006,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.15
+    id = em.15
 
-    title = em_GER.15.t
-    desc = em_GER.15.d
+    title = em.15.t
+    desc = em.15.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.15.a
+        name = em.15.a
 
         ai_chance = {
             base = 10
@@ -1045,19 +1045,19 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			transfer_state = 497
 			transfer_state = 498
 			transfer_state = 935
 			transfer_state = 936
 			transfer_state = 937
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.15.b
+        name = em.15.b
 
         ai_chance = {
             base = 2
@@ -1092,22 +1092,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.16
+    id = em.16
 
-    title = em_GER.16.t
-    desc = em_GER.16.d
+    title = em.16.t
+    desc = em.16.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.16.a
+        name = em.16.a
 
         ai_chance = {
             base = 10
@@ -1139,17 +1139,17 @@ country_event = {
 			transfer_state = 764
         }
 
-        GER = {
+        FROM = {
 			set_autonomy = {
 				target = TRA
 				autonomy_state = autonomy_puppet
 			}
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.16.b
+        name = em.16.b
 
         ai_chance = {
             base = 2
@@ -1184,22 +1184,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.17
+    id = em.17
 
-    title = em_GER.17.t
-    desc = em_GER.17.d
+    title = em.17.t
+    desc = em.17.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.17.a
+        name = em.17.a
 
         ai_chance = {
             base = 10
@@ -1231,7 +1231,7 @@ country_event = {
 			transfer_state = 774
 		}
 
-        GER = {
+        FROM = {
 			transfer_state = 17
 			transfer_state = 18
 			transfer_state = 27
@@ -1239,12 +1239,12 @@ country_event = {
 			transfer_state = 29
 			transfer_state = 785
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.17.b
+        name = em.17.b
 
         ai_chance = {
             base = 2
@@ -1279,22 +1279,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.18
+    id = em.18
 
-    title = em_GER.18.t
-    desc = em_GER.18.d
+    title = em.18.t
+    desc = em.18.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.18.a
+        name = em.18.a
 
         ai_chance = {
             base = 10
@@ -1318,19 +1318,19 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			transfer_state = 70
 			transfer_state = 71
 			transfer_state = 72
 			transfer_state = 73
 			transfer_state = 664
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.18.b
+        name = em.18.b
 
         ai_chance = {
             base = 2
@@ -1365,22 +1365,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.19
+    id = em.19
 
-    title = em_GER.19.t
-    desc = em_GER.19.d
+    title = em.19.t
+    desc = em.19.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.19.a
+        name = em.19.a
 
         ai_chance = {
             base = 15
@@ -1423,18 +1423,18 @@ country_event = {
 			}
 		}
 
-        GER = {
+        FROM = {
 			set_autonomy = {
 				target = UKR
 				autonomy_state = autonomy_puppet
 			}
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.19.b
+        name = em.19.b
 
         ai_chance = {
             base = 2
@@ -1469,22 +1469,22 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }
 
 country_event = {
-    id = em_GER.20
+    id = em.20
 
-    title = em_GER.20.t
-    desc = em_GER.20.d
+    title = em.20.t
+    desc = em.20.d
 
     is_triggered_only = yes
 
     option = {
-        name = em_GER.20.a
+        name = em.20.a
 
         ai_chance = {
             base = 15
@@ -1508,17 +1508,17 @@ country_event = {
 			}
         }
 
-        GER = {
+        FROM = {
 			transfer_state = 144
 			transfer_state = 924
 			transfer_state = 925
 
-            country_event = { id = em_GER.6 }
+            country_event = { id = em.6 }
         }
     }
 
     option = {
-        name = em_GER.20.b
+        name = em.20.b
 
         ai_chance = {
             base = 2
@@ -1553,8 +1553,642 @@ country_event = {
 			}
         }
 
-        GER = {
-            country_event = { id = em_GER.7 }
+        FROM = {
+            country_event = { id = em.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em.21
+
+    title = em.21.t
+    desc = em.21.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em.21.a
+
+        ai_chance = {
+            base = 15
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        FROM = {
+			transfer_state = 331
+			transfer_state = 332
+			transfer_state = 696
+
+            country_event = { id = em.6 }
+        }
+    }
+
+    option = {
+        name = em.21.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        FROM = {
+            country_event = { id = em.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em.22
+
+    title = em.22.t
+    desc = em.22.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em.22.a
+
+        FROM = {
+			set_autonomy = {
+				target = EGY
+				autonomy_state = autonomy_puppet
+			}
+        }
+
+		EGY = {
+			transfer_state = 446
+			transfer_state = 447
+			transfer_state = 452
+			transfer_state = 453
+			transfer_state = 456
+			transfer_state = 457
+			transfer_state = 552
+			transfer_state = 907
+
+			transfer_state = 549
+			transfer_state = 551
+			transfer_state = 767
+			transfer_state = 883
+			transfer_state = 886
+			transfer_state = 887
+
+			add_state_core = 549
+			add_state_core = 551
+			add_state_core = 767
+			add_state_core = 883
+			add_state_core = 886
+			add_state_core = 887
+		}
+    }
+}
+
+country_event = {
+    id = em.23
+
+    title = em.23.t
+    desc = em.23.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em.23.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        FROM = {
+			transfer_state = 272
+			transfer_state = 539
+			transfer_state = 660
+			transfer_state = 772
+			transfer_state = 773
+			transfer_state = 774
+			transfer_state = 776
+			transfer_state = 777
+			transfer_state = 779
+			transfer_state = 780
+
+            country_event = { id = em.6 }
+        }
+    }
+
+    option = {
+        name = em.23.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        FROM = {
+            country_event = { id = em.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em.24
+
+    title = em.24.t
+    desc = em.24.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em.24.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        FROM = {
+			transfer_state = 118
+
+            country_event = { id = em.6 }
+        }
+    }
+
+    option = {
+        name = em.24.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        FROM = {
+            country_event = { id = em.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em.25
+
+    title = em.25.t
+    desc = em.25.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em.25.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        FROM = {
+			transfer_state = 165
+			transfer_state = 794
+
+            country_event = { id = em.6 }
+        }
+    }
+
+    option = {
+        name = em.25.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        FROM = {
+            country_event = { id = em.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em.26
+
+    title = em.26.t
+    desc = em.26.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em.26.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        FROM = {
+			transfer_state = 545
+			transfer_state = 770
+			transfer_state = 771
+			transfer_state = 981
+
+            country_event = { id = em.6 }
+        }
+    }
+
+    option = {
+        name = em.26.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        FROM = {
+            country_event = { id = em.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em.27
+
+    title = em.27.t
+    desc = em.27.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em.27.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        FROM = {
+			transfer_state = 735
+
+            country_event = { id = em.6 }
+        }
+    }
+
+    option = {
+        name = em.27.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        FROM = {
+            country_event = { id = em.7 }
+        }
+    }
+}
+
+country_event = {
+    id = em.28
+
+    title = em.28.t
+    desc = em.28.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = em.28.a
+
+        ai_chance = {
+            base = 10
+			modifier = {
+				factor = 2
+				has_government = FROM
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 0.5
+				}
+			}
+        }
+
+        FROM = {
+			transfer_state = 846
+
+            country_event = { id = em.6 }
+        }
+    }
+
+    option = {
+        name = em.28.b
+
+        ai_chance = {
+            base = 2
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 1.25
+				}
+			}
+			modifier = {
+				factor = 0
+				is_subject_of = FROM
+			}
+
+			modifier = {
+				factor = 200 #needs to be this big to cancel out effects in option a
+				FROM = {
+					is_faction_leader = yes
+				}
+				any_other_country = {
+					NOT = { original_tag = FROM }
+					is_in_faction_with = FROM
+				}
+			}
+        }
+
+        FROM = {
+            country_event = { id = em.7 }
         }
     }
 }

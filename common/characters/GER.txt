@@ -154,7 +154,7 @@ characters = {
 	# EXTENDED MONARCH PEOPLE
 
 	GER_otto_habsburg = {
-		name = GER_otto_habsburg
+		name = GER_otto_habsburg_name
 		portraits = {
 			civilian = {
 				large = "GFX_Portrait_hungary_otto_von_hapsburg"
@@ -163,7 +163,7 @@ characters = {
 	}
 
 	GER_joseph_habsburg = {
-		name = GER_joseph_habsburg
+		name = GER_joseph_habsburg_name
 		portraits = {
 			civilian = {
 				large = GFX_portrait_HUN_joseph_august_von_habsburg
@@ -172,7 +172,7 @@ characters = {
 	}
 
 	GER_karl_albrecht_habsburg = {
-		name = GER_karl_albrecht_habsburg
+		name = GER_karl_albrecht_habsburg_name
 		portraits = {
 			civilian = {
 				large="GFX_portrait_POL_karl_albrecht"
@@ -181,7 +181,7 @@ characters = {
 	}
 
 	GER_michael_hohenzollern = {
-		name = GER_michael_hohenzollern
+		name = GER_michael_hohenzollern_name
 		portraits = {
 			civilian = {
 				large = "GFX_Portrait_romania_michael_i"
@@ -190,7 +190,7 @@ characters = {
 	}
 
 	GER_child_simeon = {
-		name = GER_child_simeon
+		name = GER_child_simeon_name
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_bul_regency_council"
@@ -199,7 +199,7 @@ characters = {
 	}
 
 	GER_child_peter={
-		name = GER_child_peter
+		name = GER_child_peter_name
 		portraits = {
 			civilian = {
 				large="GFX_portrait_yugoslavia_peter_ii_young"
@@ -208,7 +208,7 @@ characters = {
 	}
 
 	GER_greece_george = {
-		name = GER_greece_george
+		name = GER_greece_george_name
 		portraits = {
 			civilian = {
 				large = GFX_portrait_gre_george_ii
@@ -217,7 +217,7 @@ characters = {
 	}
 
 	GER_wilhelmina = {
-		name = GER_wilhelmina
+		name = GER_wilhelmina_name
 		portraits={
 			civilian={
 				large="GFX_portrait_HOL_wilhelmina"
@@ -226,7 +226,7 @@ characters = {
 	}
 
 	GER_belgium_leopold = {
-		name = GER_belgium_leopold
+		name = GER_belgium_leopold_name
 		portraits={
 			civilian={
 				large = GFX_portrait_BEL_king_leopold_iii 
@@ -235,7 +235,7 @@ characters = {
 	}
 
 	GER_lit_karl_gero={
-		name=GER_lit_karl_gero
+		name=GER_lit_karl_gero_name
 		portraits={
 			civilian={
 				large="GFX_portrait_LIT_karl_gero_von_urach"
@@ -244,7 +244,7 @@ characters = {
 	}
 
 	GER_poland_friedrich_christian = {
-		name=GER_poland_friedrich_christian
+		name=GER_poland_friedrich_christian_name
 		portraits = {
 			civilian = {
 				large="GFX_portrait_POL_friedrich_christian"
@@ -253,7 +253,7 @@ characters = {
 	}
 
 	GER_pavel_bermondt_avalov = {
-		name=GER_pavel_bermondt_avalov
+		name=GER_pavel_bermondt_avalov_name
 		portraits = {
 			civilian = {
 				large="GFX_portrait_POL_pavel_bermondt_avlov"
@@ -262,7 +262,7 @@ characters = {
 	}
 
 	GER_denmark_christian_x = {
-		name = GER_denmark_christian_x
+		name = GER_denmark_christian_x_name
 		portraits = {
 			civilian = {
 				large = GFX_portrait_DEN_christian_x
@@ -271,7 +271,7 @@ characters = {
 	}
 
 	GER_sweden_gustaf_v = {
-		name=GER_sweden_gustaf_v
+		name=GER_sweden_gustaf_v_name
 		portraits={
 			civilian={
 				large = "GFX_portrait_SWE_king_gustaf_v"
@@ -280,7 +280,7 @@ characters = {
 	}
 
 	GER_norway_haakon_vii = {
-		name = GER_norway_haakon_vii
+		name = GER_norway_haakon_vii_name
 		portraits = {
 			civilian = {
 				large = GFX_portrait_NOR_king_haakon_vii
@@ -289,10 +289,127 @@ characters = {
 	}
 
 	GER_iceland_knud = {
-		name = GER_iceland_knud
+		name = GER_iceland_knud_name
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ICE_king_knud
+			}
+		}
+	}
+
+	GER_british_edward = {
+		name = GER_british_edward_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Edward_VIII
+			}
+		}
+	}
+
+	GER_british_george = {
+		name = GER_british_george_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_George_VI
+			}
+		}
+	}
+
+	GER_british_elizabeth = {
+		name = GER_british_elizabeth_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eng_elizabeth_ii"
+			}
+		}
+	}
+
+	GER_british_wallis_simpson = {
+		name = GER_british_wallis_simpson_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eng_wallis_simpson"
+			}
+		}
+	}
+
+	GER_france_jean = {
+		name = GER_france_jean_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fra_jean_duke_of_guise
+			}
+		}
+	}
+
+	GER_france_alphonse = {
+		name = GER_france_alphonse_name
+		portraits = {
+			civilian = {
+				large =  GFX_portrait_SPA_alfonso_xiii
+			}
+		}
+	}
+
+	GER_france_napoleon = {
+		name = GER_france_napoleon_name
+		portraits = {
+			civilian = {
+				large = GFX_portraits_fra_napoleon_vi
+			}
+		}
+	}
+
+	GER_portugal_dom_duarte = {
+		name = GER_portugal_dom_duarte_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Dom_Duarte_Nuno
+			}
+		}
+	}
+
+	GER_brazil_pedro_henrique={
+		name=GER_brazil_pedro_henrique_name
+		portraits={
+			civilian={
+				large=GFX_portrait_BRA_pedro_henrique 
+			}
+		}
+	}
+
+	GER_brazil_pedro_de_alcantara={
+		name=GER_brazil_pedro_de_alcantara_name
+		portraits={
+			civilian={
+				large="GFX_portrait_BRA_pedro_de_alcantara"
+			}
+		}
+	}
+
+	GER_papa_pio_xi = {
+		name = ITA_papa_pio_xi_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_papa_pio_xi
+			}
+		}
+	}
+
+	GER_papa_pio_xii = {
+		name = ITA_papa_pio_xii_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_papa_pio_xii
+			}
+		}
+	}
+
+	GER_italy_vittorio_emanuele_iii = {
+		name = ITA_vittorio_emanuele_iii_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_vittorio_emanuele_III
 			}
 		}
 	}

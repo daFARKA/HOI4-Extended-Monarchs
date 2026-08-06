@@ -981,6 +981,19 @@ recruit_character = GER_denmark_christian_x
 recruit_character = GER_sweden_gustaf_v
 recruit_character = GER_norway_haakon_vii
 recruit_character = GER_iceland_knud
+recruit_character = GER_british_edward
+recruit_character = GER_british_george
+recruit_character = GER_british_elizabeth
+recruit_character = GER_british_wallis_simpson
+recruit_character = GER_france_jean
+recruit_character = GER_france_alphonse
+recruit_character = GER_france_napoleon
+recruit_character = GER_portugal_dom_duarte
+recruit_character = GER_brazil_pedro_henrique
+recruit_character = GER_brazil_pedro_de_alcantara
+recruit_character = GER_papa_pio_xi
+recruit_character = GER_papa_pio_xii
+recruit_character = GER_italy_vittorio_emanuele_iii
 
 #NEW PEOPLE WW
 recruit_character = GER_werner_von_blomberg

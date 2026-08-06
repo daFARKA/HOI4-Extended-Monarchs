@@ -1,0 +1,9 @@
+leader_traits = {
+    papa_pio_xi_immortal = {
+        random = no
+
+        non_core_manpower = 0.5
+        division_attack_factor = 0.2
+        division_defence_factor = 0.2
+    }
+}

@@ -4993,7 +4993,10 @@ form_roman_empire_category = {
 		icon = generic_form_nation
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5146,14 +5149,23 @@ form_roman_empire_category = {
 		}
 
 		visible = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = form_roman_empire_flag }
-			ITA = {
-				OR = {
-					has_completed_focus = ITA_mare_nostrum_bba
-					has_completed_focus = ITA_the_catholic_dominion
+			OR = {
+				ITA = {
+					OR = {
+						has_completed_focus = ITA_mare_nostrum_bba
+						has_completed_focus = ITA_the_catholic_dominion
+					}
+				}
+				GER = {
+					has_completed_focus = GER_mare_nostrum
 				}
 			}
+			
 		}
 
 		complete_effect = {
@@ -5318,7 +5330,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5352,7 +5367,10 @@ form_roman_empire_category = {
 		}
 
 		visible = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = reclaim_hispania_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -5446,7 +5464,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5465,7 +5486,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = reclaim_dacia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -5516,7 +5540,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5557,7 +5584,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = reclaim_moesia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -5632,7 +5662,10 @@ form_roman_empire_category = {
 		cost = 75
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5648,7 +5681,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = reclaim_aegyptus_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -5689,7 +5725,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5710,7 +5749,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = restore_mesopotamia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -5766,7 +5808,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5790,7 +5835,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = reconquer_cappadocia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -5852,7 +5900,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5870,7 +5921,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = integrate_armenia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -5914,7 +5968,10 @@ form_roman_empire_category = {
 		cost = 75
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5932,7 +5989,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = integrate_petra_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -5976,7 +6036,10 @@ form_roman_empire_category = {
 		cost = 75
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -5993,7 +6056,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = integrate_mauretania_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6037,7 +6103,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6058,7 +6127,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = integrate_pannonia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6114,7 +6186,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6138,7 +6213,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = integrate_alps_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6203,7 +6281,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6234,7 +6315,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = integrate_gaul_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6320,7 +6404,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6341,7 +6428,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = integrate_belgica_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6394,7 +6484,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6410,7 +6503,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = occupy_iberia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6451,7 +6547,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6477,7 +6576,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = return_to_britannia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6548,7 +6650,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6565,7 +6670,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = conquer_hibernia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6609,7 +6717,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6626,7 +6737,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = conquer_caledonia_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6670,7 +6784,10 @@ form_roman_empire_category = {
 		cost = 100
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6695,7 +6812,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = avenge_teutoberg_flag }
 			has_global_flag = form_roman_empire_flag
 		}
@@ -6763,7 +6883,10 @@ form_roman_empire_category = {
 		cost = 120
 
 		allowed = {
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			OR = {
 				has_dlc = "Waking the Tiger"
 				has_dlc = "By Blood Alone"
@@ -6794,7 +6917,10 @@ form_roman_empire_category = {
 		}
 
 		visible = { 
-			original_tag = ITA
+			OR = {
+				original_tag = ITA
+				original_tag = GER
+			}
 			NOT = { has_global_flag = the_bosporan_kingdom_flag }
 			has_global_flag = form_roman_empire_flag
 		}

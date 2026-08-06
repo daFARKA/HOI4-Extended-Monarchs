@@ -1970,3 +1970,28 @@ GER_viking_empire = {
 	color = rgb { 216 236 252 }
 	color_ui = rgb { 216 236 252 }
 }
+
+GER_british_empire = {
+	color = rgb { 126 113 148 }
+	color_ui = rgb { 126 113 148 }
+}
+
+GER_wallis_empire = {
+	color = rgb { 27 35 88 }
+	color_ui = rgb { 27 35 88 }
+}
+
+GER_france_spain_empire = {
+	color = rgb { 218 75 30 }
+	color_ui = rgb { 218 75 30 }
+}
+
+GER_napoleon_empire = {
+	color = rgb { 35 45 113 }
+	color_ui = rgb { 35 45 113 }
+}
+
+GER_portugal_brazil_empire = {
+	color = rgb { 25 84 29 }
+	color_ui = rgb { 25 84 29 }
+}

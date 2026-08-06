@@ -26785,6 +26785,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 0
 		y = 1
@@ -26893,6 +26906,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 2
 		y = 1
@@ -38931,6 +38957,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 6
 		y = 1
@@ -38978,6 +39017,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 4
 		y = 1
@@ -39025,6 +39077,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 8
 		y = 1
@@ -39176,7 +39241,7 @@ focus_tree = {
 		completion_reward = {
 			HUN = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -39245,7 +39310,7 @@ focus_tree = {
 		completion_reward = {
 			POL = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -39316,7 +39381,7 @@ focus_tree = {
 		completion_reward = {
 			CZE = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -39628,7 +39693,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_habsburg_adriatic_expansions
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_AUS_heritage_of_an_empire
 		prerequisite = { focus = GER_habsburg_triple_monarchy }
 
 		x = -2
@@ -39685,6 +39750,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 10
 		y = 1
@@ -39760,7 +39838,7 @@ focus_tree = {
 		completion_reward = {
 			ROM = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -39838,14 +39916,14 @@ focus_tree = {
 		completion_reward = {
 			CZE = {
 				country_event = {
-					id = em_GER.4
+					id = em.4
 					hours = 6
 					random_hours = 12
 				}
 			}
 			POL = {
 				country_event = {
-					id = em_GER.5
+					id = em.5
 					hours = 6
 					random_hours = 12
 				}
@@ -39892,7 +39970,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_michael_big_romania
-		icon = GFX_goal_generic_political_pressure	
+		icon = GFX_focus_CZE_our_royal_claims
 
 		prerequisite = { focus = GER_michael_carpatho_ukraine }
 
@@ -39928,9 +40006,11 @@ focus_tree = {
 
 			add_state_core = 764
 
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			SOV = {
 				country_event = {
-					id = em_GER.8
+					id = em.8
 					hours = 6
 					random_hours = 12
 				}
@@ -39981,6 +40061,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 12
 		y = 1
@@ -40056,7 +40149,7 @@ focus_tree = {
 		completion_reward = {
 			BUL = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -40098,7 +40191,7 @@ focus_tree = {
 		completion_reward = {
 			ROM = {
 				country_event = {
-					id = em_GER.9
+					id = em.9
 					hours = 6
 					random_hours = 12
 				}	
@@ -40108,7 +40201,7 @@ focus_tree = {
 			
 			YUG = {
 				country_event = {
-					id = em_GER.10
+					id = em.10
 					hours = 6
 					random_hours = 12
 				}	
@@ -40118,7 +40211,7 @@ focus_tree = {
 
 			GRE = {
 				country_event = {
-					id = em_GER.11
+					id = em.11
 					hours = 6
 					random_hours = 12
 				}	
@@ -40257,6 +40350,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 14
 		y = 1
@@ -40332,7 +40438,7 @@ focus_tree = {
 		completion_reward = {
 			YUG = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -40442,10 +40548,10 @@ focus_tree = {
 
 			ROM = {
 				country_event = {
-					id = em_GER.16
+					id = em.16
 					hours = 6
 					random_hours = 12
-				}	
+				}
 			}		
 			effect_tooltip = {
 				custom_effect_tooltip = if_they_accept_tt
@@ -40467,7 +40573,7 @@ focus_tree = {
 				custom_effect_tooltip = if_they_refuse_tt
 				create_wargoal = {
 					type = take_state_focus
-					target = YUG
+					target = ROM
 				}
 			}
 		}
@@ -40547,6 +40653,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 16
 		y = 1
@@ -40622,7 +40741,7 @@ focus_tree = {
 		completion_reward = {
 			GRE = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -40732,6 +40851,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 18
 		y = 1
@@ -40808,7 +40940,7 @@ focus_tree = {
 		completion_reward = {
 			HOL = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -40843,6 +40975,11 @@ focus_tree = {
 			owns_state = 7
 			owns_state = 35
 			owns_state = 36
+
+			owns_state = 6
+			owns_state = 34
+			owns_state = 977
+			owns_state = 980
 		}
 
 		dynamic = yes
@@ -40850,7 +40987,7 @@ focus_tree = {
 		completion_reward = {
 			INS = {
 				country_event = {
-					id = em_GER.12
+					id = em.12
 					hours = 6
 					random_hours = 12
 				}	
@@ -40941,7 +41078,7 @@ focus_tree = {
 
 			ENG = {
 				country_event = {
-					id = em_GER.13
+					id = em.13
 					hours = 6
 					random_hours = 12
 				}	
@@ -40962,7 +41099,7 @@ focus_tree = {
 
 			FRA = {
 				country_event = {
-					id = em_GER.14
+					id = em.14
 					hours = 6
 					random_hours = 12
 				}	
@@ -40976,7 +41113,7 @@ focus_tree = {
 
 			BRA = {
 				country_event = {
-					id = em_GER.15
+					id = em.15
 					hours = 6
 					random_hours = 12
 				}
@@ -41061,6 +41198,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 20
 		y = 1
@@ -41136,7 +41286,7 @@ focus_tree = {
 		completion_reward = {
 			BEL = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -41171,6 +41321,11 @@ focus_tree = {
 			owns_state = 7
 			owns_state = 35
 			owns_state = 36
+
+			owns_state = 6
+			owns_state = 34
+			owns_state = 977
+			owns_state = 980
 		}
 
 		dynamic = yes
@@ -41178,7 +41333,7 @@ focus_tree = {
 		completion_reward = {
 			COG = {
 				country_event = {
-					id = em_GER.12
+					id = em.12
 					hours = 6
 					random_hours = 12
 				}
@@ -41234,7 +41389,7 @@ focus_tree = {
 
 			FRA = {
 				country_event = {
-					id = em_GER.17
+					id = em.17
 					hours = 6
 					random_hours = 12
 				}	
@@ -41298,6 +41453,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 22
 		y = 1
@@ -41378,7 +41546,7 @@ focus_tree = {
 		completion_reward = {
 			LIT = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -41446,6 +41614,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 24
 		y = 1
@@ -41525,7 +41706,7 @@ focus_tree = {
 		completion_reward = {
 			POL = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -41755,6 +41936,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 26
 		y = 1
@@ -41838,7 +42032,7 @@ focus_tree = {
 
 			CZE = {
 				country_event = {
-					id = em_GER.18
+					id = em.18
 					hours = 6
 					random_hours = 12
 				}	
@@ -41880,7 +42074,7 @@ focus_tree = {
 		completion_reward = {
 			SOV = {
 				country_event = {
-					id = em_GER.19
+					id = em.19
 					hours = 6
 					random_hours = 12
 				}
@@ -42017,6 +42211,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_denmark_christian_x }
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 28
 		y = 1
@@ -42094,7 +42301,7 @@ focus_tree = {
 		completion_reward = {
 			NOR = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}
@@ -42198,6 +42405,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_denmark_christian_x }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 30
 		y = 1
@@ -42275,7 +42495,7 @@ focus_tree = {
 		completion_reward = {
 			SWE = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -42342,7 +42562,7 @@ focus_tree = {
 
 			NOR = {
 				country_event = {
-					id = em_GER.20
+					id = em.20
 					hours = 6
 					random_hours = 12
 				}	
@@ -42469,6 +42689,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
 		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 32
 		y = 1
@@ -42547,7 +42780,7 @@ focus_tree = {
 		completion_reward = {
 			DEN = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}	
@@ -42708,6 +42941,19 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_denmark_christian_x }
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
 		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 34
 		y = 1
@@ -42782,7 +43028,7 @@ focus_tree = {
 		completion_reward = {
 			ICE = {
 				country_event = {
-					id = em_GER.1
+					id = em.1
 					hours = 6
 					random_hours = 12
 				}
@@ -42953,10 +43199,3945 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_dummy
+		id = GER_british_edward
+		icon = GFX_focus_AST_end_the_kingdom
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 36
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_british_edward = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							inexperienced_imperialist
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_ireland
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { 
+			focus = GER_british_edward
+			focus = GER_british_george
+			focus = GER_british_elizabeth
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_british_edward
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 119
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = IRE
+				generator = { 113 134 135 }
+			}
+			add_state_core = 113
+			add_state_core = 134
+			add_state_core = 135
+		}
+	}
+
+	focus = {
+		id = GER_british_india
+		icon = GFX_focus_RAJ_british_investors
+		prerequisite = { 
+			focus = GER_british_uk
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_british_edward
+		cost = 7
+		
+		available = {
+			is_subject = no
+
+			owns_state = 119
+			owns_state = 120
+			owns_state = 121
+			owns_state = 122
+			owns_state = 123
+			owns_state = 125
+			owns_state = 126
+			owns_state = 127
+			owns_state = 128
+			owns_state = 129
+			owns_state = 130
+			owns_state = 131
+			owns_state = 132
+			owns_state = 133
+			owns_state = 136
+			owns_state = 338
+			owns_state = 931
+		}
+
+		completion_reward = {
+			RAJ = {
+				country_event = {
+					id = em.12
+					hours = 6
+					random_hours = 12
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+					GER = {
+					set_autonomy = {
+						target = RAJ
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = RAJ
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_burma
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_british_india }
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_british_edward
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			has_subject = RAJ
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BRM
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_australia
+		icon = GFX_focus_AST_australia_first
+		prerequisite = { focus = GER_british_usa }
+		
+		x = 0
+		y = 4
+		relative_position_id = GER_british_edward
+		cost = 3
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = AST
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_george
+		icon = GFX_focus_eng_god_save_the_king
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 38
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_british_george = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							popular_figurehead
+							stammer
+							humble
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_uk
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = {
+			focus = GER_british_edward
+			focus = GER_british_george
+			focus = GER_british_elizabeth
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_british_george
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = ENG }
+			ENG = {
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			ENG = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = ENG
+
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = ENG transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ENG
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_africa
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		prerequisite = { 
+			focus = GER_british_uk
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_british_george
+		cost = 8
+		
+		available = {
+			is_subject = no
+
+			owns_state = 119
+			owns_state = 120
+			owns_state = 121
+			owns_state = 122
+			owns_state = 123
+			owns_state = 125
+			owns_state = 126
+			owns_state = 127
+			owns_state = 128
+			owns_state = 129
+			owns_state = 130
+			owns_state = 131
+			owns_state = 132
+			owns_state = 133
+			owns_state = 136
+			owns_state = 338
+			owns_state = 931
+		}
+
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = em.22
+					hours = 6
+					random_hours = 12
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			FRA = {
+				country_event = {
+					id = em.23
+					hours = 6
+					random_hours = 12
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 272
+					transfer_state = 539
+					transfer_state = 660
+					transfer_state = 772
+					transfer_state = 773
+					transfer_state = 774
+					transfer_state = 776
+					transfer_state = 777
+					transfer_state = 779
+					transfer_state = 780
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = FRA
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			SAF = {
+				country_event = {
+					id = em.12
+					hours = 6
+					random_hours = 12
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+					GER = {
+					set_autonomy = {
+						target = SAF
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = SAF
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_usa
+		icon = GFX_focus_generic_attack_usa
+		prerequisite = { 
+			focus = GER_british_africa
+		}
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_british_george
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_imperial_federation
+		prerequisite = { focus = GER_british_usa }
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+					has_dlc = "Death or Dishonor"
+				}
+				CAN = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							OR = {
+								has_autonomy_state = autonomy_integrated_puppet
+								has_autonomy_state = autonomy_reichskommissariat
+							}
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = CAN
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				SAF = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							OR = {
+								has_autonomy_state = autonomy_integrated_puppet
+								has_autonomy_state = autonomy_reichskommissariat
+							}
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = SAF
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						RAJ = { has_country_flag = ENG_accepted_federation }
+					}
+					RAJ = {
+						OR = {
+							AND = {
+								is_subject_of = ENG
+								OR = {
+									has_autonomy_state = autonomy_integrated_puppet
+									has_autonomy_state = autonomy_reichskommissariat
+									ROOT = { has_country_leader_with_trait = viceroy_emeritus }
+								}
+							}
+							AND = {
+								exists = no
+								NOT = {
+									any_state = {
+										is_core_of = RAJ
+										NOT = { state = 320 }
+										NOT = { state = 321 }
+										NOT = { is_owned_by = ROOT }
+									}
+								}
+							}
+						}
+					}
+				}
+				AST = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							OR = {
+								has_autonomy_state = autonomy_integrated_puppet
+								has_autonomy_state = autonomy_reichskommissariat
+							}
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = AST
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				NZL = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							OR = {
+								has_autonomy_state = autonomy_integrated_puppet
+								has_autonomy_state = autonomy_reichskommissariat
+							}
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = NZL
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "Together for Victory"
+					NOT = { has_dlc = "Death or Dishonor" }
+				}
+				CAN = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							has_autonomy_state = autonomy_integrated_puppet
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = CAN
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				SAF = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							has_autonomy_state = autonomy_integrated_puppet
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = SAF
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						RAJ = { has_country_flag = ENG_accepted_federation }
+					}
+					RAJ = {
+						OR = {
+							AND = {
+								is_subject_of = ENG
+								has_autonomy_state = autonomy_integrated_puppet
+							}
+							AND = {
+								exists = no
+								NOT = {
+									any_state = {
+										is_core_of = RAJ
+										NOT = { state = 320 }
+										NOT = { state = 321 }
+										NOT = { is_owned_by = ROOT }
+									}
+								}
+							}
+						}
+					}
+				}
+				AST = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							has_autonomy_state = autonomy_integrated_puppet
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = AST
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				NZL = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							has_autonomy_state = autonomy_integrated_puppet
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = NZL
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_dlc = "Together for Victory" }
+					has_dlc = "Death or Dishonor"
+					has_government = fascism
+				}
+				CAN = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							has_autonomy_state = autonomy_reichskommissariat
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = CAN
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				SAF = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							has_autonomy_state = autonomy_reichskommissariat
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = SAF
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						RAJ = { has_country_flag = ENG_accepted_federation }
+					}
+					RAJ = {
+						OR = {
+							AND = {
+								is_subject_of = ENG
+								has_autonomy_state = autonomy_reichskommissariat
+							}
+							AND = {
+								exists = no
+								NOT = {
+									any_state = {
+										is_core_of = RAJ
+										NOT = { state = 320 }
+										NOT = { state = 321 }
+										NOT = { is_owned_by = ROOT }
+									}
+								}
+							}
+						}
+					}
+				}
+				AST = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							has_autonomy_state = autonomy_reichskommissariat
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = AST
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				NZL = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							has_autonomy_state = autonomy_reichskommissariat
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = NZL
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+			}
+			else = {
+				CAN = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							compare_autonomy_progress_ratio < 0.1
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = CAN
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				SAF = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							compare_autonomy_progress_ratio < 0.1
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = SAF
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						RAJ = { has_country_flag = ENG_accepted_federation }
+					}
+					RAJ = {
+						OR = {
+							AND = {
+								is_subject_of = ENG
+								compare_autonomy_progress_ratio < 0.1
+							}
+							AND = {
+								exists = no
+								NOT = {
+									any_state = {
+										is_core_of = RAJ
+										NOT = { state = 320 }
+										NOT = { state = 321 }
+										NOT = { is_owned_by = ROOT }
+									}
+								}
+							}
+						}
+					}
+				}
+				AST = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							compare_autonomy_progress_ratio < 0.1
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = AST
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+				NZL = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							compare_autonomy_progress_ratio < 0.1
+						}
+						AND = {
+							exists = no
+							NOT = {
+								any_state = {
+									is_core_of = NZL
+									NOT = { is_owned_by = ROOT }
+								}
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						CAN = { exists = yes }
+						SAF = { exists = yes }
+						AST = { exists = yes }
+						NZL = { exists = yes }
+					}
+				}
+				has_country_flag = ENG_dominions_accepted_federation
+			}
+		}
+
+		icon = GFX_focus_eng_imperial_federation
+
+		x = 0
+		y = 4
+		relative_position_id = GER_british_george
+		cost = 10
+
+		completion_reward = {
+			if = {
+				limit = {
+					RAJ = {
+						NOT = { is_subject_of = ENG }
+					}
+				}
+				set_cosmetic_tag = ENG_imperial_federation_unified
+				news_event = { id = mtg_news.8 days = 1 }
+			}
+			if = {
+				limit = {
+					RAJ = {
+						is_subject_of = ENG
+					}
+				}
+				set_cosmetic_tag = ENG_imperial_federation_india_unified
+				news_event = { id = mtg_news.9 days = 1 }
+			}
+			CAN = {
+				every_unit_leader = {
+					set_nationality = ENG
+				}
+			}
+			annex_country = {
+			    target = CAN
+			    transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				add_core_of = ENG
+			}
+			SAF = {
+				every_unit_leader = {
+					set_nationality = ENG
+				}
+			}
+			annex_country = {
+			    target = SAF
+			    transfer_troops = yes
+			}
+			if = {
+				limit = {
+					SAF = { has_completed_focus = SAF_police_windhoek }
+				}
+				every_state = {
+					limit = {
+						is_core_of = SAF
+						NOT = { state = 275 }
+					}
+					add_core_of = ENG
+				}
+			}
+			if = {
+				limit = {
+					RAJ = { has_country_flag = ENG_accepted_federation }
+				}
+				RAJ = {
+					every_unit_leader = {
+						set_nationality = ENG
+					}
+				}
+				annex_country = {
+				    target = RAJ
+				    transfer_troops = yes
+				}
+				if = {
+					limit = {
+						ROOT = { has_country_leader_with_trait = viceroy_emeritus }
+					}
+					custom_effect_tooltip = viceroy_emeritus_downside_tt
+					every_state = {
+						limit = { 
+							OR = {
+								is_owned_by = ROOT
+								is_owned_by = RAJ #For the tooltip
+							}
+							is_core_of = RAJ 
+							NOT = { is_core_of = ROOT }
+						}
+						add_resistance = 15
+					}
+				}
+			}
+			AST = {
+				every_unit_leader = {
+					set_nationality = ENG
+				}
+			}
+			annex_country = {
+			    target = AST
+			    transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = AST
+				}
+				add_core_of = ENG
+			}
+			NZL = {
+				every_unit_leader = {
+					set_nationality = ENG
+				}
+			}
+			annex_country = {
+			    target = NZL
+			    transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = NZL
+				}
+				add_core_of = ENG
+			}
+			MAL = {
+				every_unit_leader = {
+					set_nationality = ENG
+				}
+			}
+			annex_country = {
+			    target = MAL
+			    transfer_troops = yes
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_elizabeth
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 40
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_british_elizabeth = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							inexperienced_monarch
+							headstrong 
+							popular_queen
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_canada
+		icon = GFX_focus_attack_canada
+		prerequisite = { 
+			focus = GER_british_edward
+			focus = GER_british_george
+			focus = GER_british_elizabeth
+			focus = GER_british_wallis_simpson
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_british_elizabeth
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 331
+			owns_state = 332
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CAN
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_malaysia
+		icon = GFX_focus_INS_liberate_malaya
+		prerequisite = { 
+			focus = GER_british_uk
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_british_elizabeth
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 119
+			owns_state = 120
+			owns_state = 121
+			owns_state = 122
+			owns_state = 123
+			owns_state = 125
+			owns_state = 126
+			owns_state = 127
+			owns_state = 128
+			owns_state = 129
+			owns_state = 130
+			owns_state = 131
+			owns_state = 132
+			owns_state = 133
+			owns_state = 136
+			owns_state = 338
+			owns_state = 931
+		}
+
+		completion_reward = {
+			MAL = {
+				country_event = {
+					id = em.12
+					hours = 6
+					random_hours = 12
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+					GER = {
+					set_autonomy = {
+						target = MAL
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = MAL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_holy_land
+		icon = GFX_focus_AFG_savior_of_the_holy_lands
+		prerequisite = { 
+			focus = GER_british_africa
+		}
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_british_elizabeth
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			has_subject = EGY
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = PAL
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = JOR
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = SAU
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = YEM
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = OMA
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = KUW
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_newzealand
+		icon = GFX_focus_generic_new_zealand
+		prerequisite = { focus = GER_british_usa }
+		
+		x = 0
+		y = 4
+		relative_position_id = GER_british_elizabeth
+		cost = 3
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = NZL
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_wallis_simpson
+		icon = GFX_focus_USA_uncle_sam
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 42
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_british_wallis_simpson = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							inexperienced_monarch
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_wallis_simpson_newfoundland
+		icon = GFX_focus_generic_land_redistribution
+		prerequisite = { focus = GER_british_wallis_simpson }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_british_wallis_simpson
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = ENG }
+			ENG = {
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			ENG = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = ENG
+
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = em.21
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 331
+					transfer_state = 332
+					transfer_state = 696
+				}
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ENG
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_wallis_simpson_core_east_canada
+		icon = GFX_focus_generic_annex_country_2
+		prerequisite = { focus = GER_british_wallis_simpson_newfoundland }
+		relative_position_id = GER_british_wallis_simpson
+
+		x = 0
+		y = 2
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 331
+			owns_state = 332
+			owns_state = 696
+
+			controls_state = 276
+			controls_state = 464
+			controls_state = 465
+			controls_state = 468
+			controls_state = 860
+			controls_state = 863
+		}
+
+		completion_reward = {
+			add_state_core = 331
+			add_state_core = 332
+			add_state_core = 696
+
+			create_wargoal = {
+				type = take_state_focus
+				target = CAN
+			}
+
+			add_state_core = 276
+			add_state_core = 464
+			add_state_core = 465
+			add_state_core = 468
+			add_state_core = 860
+			add_state_core = 863
+		}
+	}
+
+	focus = {
+		id = GER_british_wallis_simpson_usa
+		icon = GFX_focus_generic_befriend_usa
+		prerequisite = {
+			focus = GER_british_wallis_simpson_core_east_canada
+		}
+
+		x = 0
+		y = 3
+		relative_position_id = GER_british_wallis_simpson
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = USA }
+			USA = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			USA = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = USA
+
+		completion_reward = {
+			USA = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = USA transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = USA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_british_wallis_simpson_anglosphere
+		icon = GFX_focus_eng_unite_the_anglosphere
+		prerequisite = {
+			focus = GER_british_wallis_simpson_usa
+		}
+
+		x = 0
+		y = 4
+		relative_position_id = GER_british_wallis_simpson
+		cost = 10
+
+		available = {
+			is_subject = no
+			USA = {
+				exists = no
+			}
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = GER_wallis_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 466
+			add_state_core = 467
+			add_state_core = 469
+			add_state_core = 470
+			add_state_core = 471
+			add_state_core = 472
+			add_state_core = 473
+			add_state_core = 682
+			add_state_core = 683
+			add_state_core = 739
+			add_state_core = 740
+			add_state_core = 862
+			add_state_core = 864
+			add_state_core = 865
+			add_state_core = 866
+			add_state_core = 867
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			create_wargoal = {
+				type = take_state_focus
+				target = MEX
+			}
+			add_state_core = 479
+			add_state_core = 480
+			add_state_core = 481
+			add_state_core = 482
+			add_state_core = 483
+			add_state_core = 484
+		}
+	}
+
+	focus = {
+		id = GER_france_alphonse
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 44
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_france_alphonse = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_france_alphonse_spain
+		icon = GFX_focus_generic_attack_nationalist_spain_focus
+		prerequisite = { focus = GER_france_alphonse }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_france_alphonse
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 31
+			owns_state = 806
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = 165.controller
+			}
+		}
+	}
+
+	focus = {
+		id = GER_france_alphonse_core_spain
+		icon = GFX_focus_PHI_reconciliation_with_spain
+		prerequisite = { focus = GER_france_alphonse_spain }
+		relative_position_id = GER_france_alphonse
+
+		x = 0
+		y = 2
+		cost = 10
+		
+		available = {
+			is_subject = no
+
+			owns_state = 41
+			owns_state = 165
+			owns_state = 166
+			owns_state = 167
+			owns_state = 168
+			owns_state = 169
+			owns_state = 170
+			owns_state = 171
+			owns_state = 172
+			owns_state = 173
+			owns_state = 174
+			owns_state = 175
+			owns_state = 176
+			owns_state = 177
+			owns_state = 788
+			owns_state = 789
+			owns_state = 790
+			owns_state = 791
+			owns_state = 792
+			owns_state = 793
+			owns_state = 794
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = GER_france_spain_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 41
+			add_state_core = 165
+			add_state_core = 166
+			add_state_core = 167
+			add_state_core = 168
+			add_state_core = 169
+			add_state_core = 170
+			add_state_core = 171
+			add_state_core = 172
+			add_state_core = 173
+			add_state_core = 174
+			add_state_core = 175
+			add_state_core = 176
+			add_state_core = 177
+			add_state_core = 788
+			add_state_core = 789
+			add_state_core = 790
+			add_state_core = 791
+			add_state_core = 792
+			add_state_core = 793
+			add_state_core = 794
+		}
+	}
+
+	focus = {
+		id = GER_france_alphonse_core_iberia
+		icon = GFX_focus_generic_free_iberia
+		prerequisite = { focus = GER_france_alphonse_core_spain }
+		relative_position_id = GER_france_alphonse
+
+		x = 0
+		y = 3
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = POR
+				generator = { 112 179 180 181 795 }
+			}
+
+			add_state_core = 112
+			add_state_core = 179
+			add_state_core = 180
+			add_state_core = 181
+			add_state_core = 795
+		}
+	}
+
+	focus = {
+		id = GER_france_alphonse_gibraltar
+		icon = GFX_focus_generic_annex_country
+		prerequisite = { focus = GER_france_alphonse_core_iberia }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_france_alphonse
+		cost = 3
+
+		available = {
+			is_subject = no
+		}
+
+		will_lead_to_war_with = ENG
+
+		completion_reward = {
+			add_state_core = 118
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ENG = {
+				country_event = {
+					id = em.24
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 118
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ENG
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = GER_france_jean
+		icon = GFX_focus_focus_fra_orleans_restoration
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 46
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_france_jean = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = moderatism
+						traits = {
+							duke_of_orleans
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_france
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = {
+			focus = GER_france_jean
+			focus = GER_france_alphonse
+			focus = GER_france_napoleon
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_france_jean
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = FRA }
+			FRA = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			FRA = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = FRA
+
+		completion_reward = {
+			FRA = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = FRA transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = FRA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_france_italy
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = GER_france }
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_france_jean
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 735
+
+			NOT = {
+				has_completed_focus = GER_france_alphonse
+			}
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ITA
+				generator = { 2 158 162 }
+			}
+			add_state_core = 2
+			add_state_core = 158
+			add_state_core = 162
+		}
+	}
+
+	focus = {
+		id = GER_france_switzerland
+		icon = GFX_focus_attack_switzerland
+		prerequisite = { focus = GER_france_italy }
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_france_jean
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SWI
+				generator = { 845 846 }
+			}
+			add_state_core = 845
+			add_state_core = 846
+		}
+	}
+
+	focus = {
+		id = GER_france_jean_emperor
+		icon = GFX_focus_focus_fra_fascist_threat
+		prerequisite = { focus = GER_france_switzerland }
+		
+		x = 0
+		y = 4
+		relative_position_id = GER_france_jean
+		cost = 10
+		
+		available = {
+			is_subject = no
+
+			has_completed_focus = GER_france_jean
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+
+			add_country_leader_trait = constitutional_monarch
+		
+			add_timed_idea = { idea = FRA_counter_action days = 730 }
+		}
+	}
+
+	focus = {
+		id = GER_france_napoleon
+		icon = GFX_focus_focus_fra_third_empire
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 48
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_france_napoleon = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_france_napoleon_benelux
+		icon = GFX_focus_generic_influence_benelux
+		prerequisite = { focus = GER_france_napoleon }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_france_napoleon
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 17
+			owns_state = 18
+			owns_state = 28
+			owns_state = 29
+			owns_state = 785
+
+			NOT = { has_war_with = BEL }
+			BEL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+			NOT = { has_war_with = HOL }
+			HOL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+			NOT = { has_war_with = LUX }
+			LUX = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		bypass = {
+			BEL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+			HOL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+			LUX = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			BEL = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = BEL transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = BEL
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			HOL = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = HOL transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = HOL
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			LUX = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = LUX transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = LUX
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+	}
+
+	focus = {
+		id = GER_france_napoleon_uk
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = GER_france_napoleon_benelux }
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_france_napoleon
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+			}
+		}
+	}
+
+	focus = {
+		id = GER_france_napoleon_spain
+		icon = GFX_focus_intervention_spain_nationalists
+		prerequisite = { focus = GER_france_napoleon_uk }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_france_napoleon
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			add_state_core = 165
+			add_state_core = 794
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			165 = {
+				owner = {
+					country_event = {
+						id = em.25
+						hours = 6
+						random_hours = 12
+					}
+				}
+			}
+
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 165
+					transfer_state = 794
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = 165.controller
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_france_napoleon_je_suis_la_deluge
+		icon = GFX_focus_fra_le_deluge
+		x = 0
+		y = 4
+
+		prerequisite = { focus = GER_france_napoleon_spain }
+		prerequisite = { focus = GER_france_switzerland }
+
+
+		relative_position_id = GER_france_napoleon
+		cost = 10
+
+
+		available = {
+			is_subject = no
+
+			owns_state = 6
+			owns_state = 7
+			owns_state = 8
+			owns_state = 34
+			owns_state = 35
+			owns_state = 36
+			owns_state = 977
+			owns_state = 980
+
+			owns_state = 845
+			owns_state = 846
+			
+			owns_state = 165
+			owns_state = 794
+		}
+		
+		completion_reward = {
+			set_cosmetic_tag = GER_napoleon_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = { FRA_la_deluge }
+		}
+	}
+
+	focus = {
+		id = GER_brazil_pedro_de_alcantara
+		icon = GFX_focus_BRA_pedro_de_alcantara
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
 
 		x = 50
 		y = 1
 		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_brazil_pedro_de_alcantara = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_brazil
+		icon = GFX_focus_BRA_empire_of_brazil
+		prerequisite = { 
+			focus = GER_brazil_pedro_de_alcantara
+			focus = GER_brazil_pedro_henrique
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = GER_brazil_pedro_de_alcantara
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = BRA }
+			BRA = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			BRA = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = BRA
+
+		completion_reward = {
+			BRA = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = BRA transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = BRA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_brazil_paraguay
+		icon = GFX_focus_ARG_paraguayan_ultimatum
+		prerequisite = { focus = GER_brazil	}
+
+		x = 0
+		y = 2
+		relative_position_id = GER_brazil_pedro_de_alcantara
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = PAR }
+			PAR = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+			NOT = { has_war_with = URG }
+			URG = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		completion_reward = {
+			PAR = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = PAR transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = PAR
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			URG = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = URG transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = URG
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_brazil_attack_south_america
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_brazil_paraguay }
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_brazil_pedro_de_alcantara
+		cost = 7
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ARG
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = CHL
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = BOL
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = PRU
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = ECU
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = COL
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = VEN
+			}
+		}
+	}
+
+	focus = {
+		id = GER_brazil_unify_south_america
+		icon = GFX_focus_generic_south_america
+		prerequisite = { focus = GER_brazil_attack_south_america }
+		
+		x = 0
+		y = 4
+		relative_position_id = GER_brazil_pedro_de_alcantara
+		cost = 10
+
+		available = {
+			is_subject = no
+
+			ARG = {
+				exists = no
+			}
+			CHL = {
+				exists = no
+			}
+			BOL = {
+				exists = no
+			}
+			PRU = {
+				exists = no
+			}
+			ECU = {
+				exists = no
+			}
+			COL = {
+				exists = no
+			}
+			VEN = {
+				exists = no
+			}
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = BRA_america_do_sul
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ARG
+						is_core_of = CHL
+						is_core_of = BOL
+						is_core_of = PRU
+						is_core_of = ECU
+						is_core_of = COL
+						is_core_of = VEN
+					}
+				}
+
+				add_core_of = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = GER_brazil_pedro_henrique
+		icon = GFX_focus_BRA_pedro_henrique
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 52
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_brazil_pedro_henrique = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_portugal_brazil_unification
+		icon = GFX_focus_por_the_kingdom_reunited
+		prerequisite = { 
+			focus = GER_portugal_dom_duarte_portugal
+			focus = GER_brazil
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = GER_brazil_pedro_henrique
+		cost = 8
+
+		available = {
+			is_subject = no
+			
+		}
+
+		dynamic = yes
+
+		will_lead_to_war_with = POR
+
+		completion_reward = {
+			set_cosmetic_tag = GER_portugal_brazil_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					BRA = { exists = no }
+				}
+
+				POR = {
+					country_event = {
+						id = em.1
+						hours = 6
+						random_hours = 12
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					POR = { exists = no }
+				}
+
+				BRA = {
+					country_event = {
+						id = em.1
+						hours = 6
+						random_hours = 12
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_portugal_brazil_SA_claims
+		icon = GFX_focus_por_recover_latin_america
+		prerequisite = {
+			focus = GER_portugal_brazil_unification
+		}
+
+		x = 0
+		y = 3
+		relative_position_id = GER_brazil_pedro_henrique
+		cost = 3
+
+		available = {
+			is_subject = no
+			
+		}
+
+		dynamic = yes
+
+		will_lead_to_war_with = POR
+
+		completion_reward = {
+			add_state_claim = 300
+			add_state_claim = 945
+			add_state_claim = 946
+			add_state_claim = 301
+			add_state_claim = 510
+
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = GER_brazil_pedro_de_alcantara
+						has_completed_focus = GER_brazil_pedro_henrique
+					}
+				}
+
+				add_state_claim = 299
+				add_state_claim = 309
+				add_state_claim = 310
+				add_state_claim = 687
+			}
+		}
+	}
+
+	focus = {
+		id = GER_portugal_brazil_spain
+		icon = GFX_focus_generic_attack_nationalist_spain_focus
+		prerequisite = { focus = GER_portugal_brazil_SA_claims }
+		
+		x = 0
+		y = 4
+		relative_position_id = GER_brazil_pedro_henrique
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 180
+			owns_state = 181
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = 165.controller
+			}
+
+			add_state_claim = 41
+			add_state_claim = 165
+			add_state_claim = 166
+			add_state_claim = 167
+			add_state_claim = 168
+			add_state_claim = 169
+			add_state_claim = 170
+			add_state_claim = 171
+			add_state_claim = 172
+			add_state_claim = 173
+			add_state_claim = 174
+			add_state_claim = 175
+			add_state_claim = 176
+			add_state_claim = 177
+			add_state_claim = 788
+			add_state_claim = 789
+			add_state_claim = 790
+			add_state_claim = 791
+			add_state_claim = 792
+			add_state_claim = 793
+			add_state_claim = 794
+		}
+	}
+
+	focus = {
+		id = GER_portugal_dom_duarte
+		icon = GFX_focus_por_reclaim_crown_jewel
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 54
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_portugal_dom_duarte = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_portugal_dom_duarte_portugal
+		icon = GFX_focus_generic_befriend_portugal
+		prerequisite = { focus = GER_portugal_dom_duarte }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_portugal_dom_duarte
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = POR }
+			POR = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			POR = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = POR
+
+		completion_reward = {
+			POR = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = POR transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = POR
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_portugal_dom_duarte_remember_olivenca
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			owns_state = 170
+			owns_state = 169
+		}
+		prerequisite = { focus = GER_portugal_dom_duarte_portugal }
+		icon = GFX_focus_por_remember_olivenca
+		x = 0
+		y = 2
+
+		relative_position_id = GER_portugal_dom_duarte
+		cost = 2
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 169.controller
+				generator = { 169 170 }
+			}
+			add_state_core = 169
+			add_state_core = 170
+		}
+	}
+
+	focus = {
+		id = GER_portugal_dom_duarte_central_africa
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			owns_state = 770
+			owns_state = 545
+			owns_state = 771
+			owns_state = 981
+		}
+		prerequisite = { focus = GER_portugal_dom_duarte_remember_olivenca }
+		icon = GFX_focus_por_the_pink_map
+		x = 0
+		y = 3
+
+		relative_position_id = GER_portugal_dom_duarte
+		cost = 5
+		completion_reward = {
+			add_state_claim = 545
+			add_state_claim = 770
+			add_state_claim = 771
+			add_state_claim = 981
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ENG = {
+				country_event = {
+					id = em.26
+					hours = 6
+					random_hours = 12
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 545
+					transfer_state = 770
+					transfer_state = 771
+					transfer_state = 981
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ENG
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_portugal_dom_duarte_empire
+		icon = GFX_focus_por_iberian_summit
+		prerequisite = { focus = GER_portugal_dom_duarte_central_africa }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_portugal_dom_duarte
+		cost = 10
+
+		available = {
+			is_subject = no
+
+			owns_state = 41
+			owns_state = 165
+			owns_state = 166
+			owns_state = 167
+			owns_state = 168
+			owns_state = 169
+			owns_state = 170
+			owns_state = 171
+			owns_state = 172
+			owns_state = 173
+			owns_state = 174
+			owns_state = 175
+			owns_state = 176
+			owns_state = 177
+			owns_state = 788
+			owns_state = 789
+			owns_state = 790
+			owns_state = 791
+			owns_state = 792
+			owns_state = 793
+			owns_state = 794
+
+			owns_state = 770
+			owns_state = 545
+			owns_state = 771
+			owns_state = 981
+		}
+
+		completion_reward = {
+			
+			add_state_core = 41
+			add_state_core = 165
+			add_state_core = 166
+			add_state_core = 167
+			add_state_core = 168
+			add_state_core = 169
+			add_state_core = 170
+			add_state_core = 171
+			add_state_core = 172
+			add_state_core = 173
+			add_state_core = 174
+			add_state_core = 175
+			add_state_core = 176
+			add_state_core = 177
+			add_state_core = 788
+			add_state_core = 789
+			add_state_core = 790
+			add_state_core = 791
+			add_state_core = 792
+			add_state_core = 793
+			add_state_core = 794
+
+			add_state_core = 770
+			add_state_core = 545
+			add_state_core = 771
+			add_state_core = 981
+
+			add_state_core = 296
+			add_state_core = 540
+			add_state_core = 544
+			add_state_core = 702
+			add_state_core = 796
+			add_state_core = 891
+			add_state_core = 892
+			add_state_core = 896
+			add_state_core = 897
+		}
+	}
+
+	focus = {
+		id = GER_italy_vittorio_emanuele_iii
+		icon = GFX_focus_ITA_king_vittorio
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+
+		x = 56
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_italy_vittorio_emanuele_iii = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							the_soldier_king
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_italy
+		icon = GFX_focus_befriend_italy
+		prerequisite = { 
+			focus = GER_italy_vittorio_emanuele_iii 
+			focus = GER_papa_pio_xii
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_italy_vittorio_emanuele_iii
+		cost = 7
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = ITA }
+			ITA = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			ITA = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = ITA
+
+		completion_reward = {
+			ITA = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = ITA transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ITA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_italy_vittorio_emanuele_albania
+		icon = GFX_focus_ITA_albanian_irredentism
+		prerequisite = { focus = GER_italy }
+
+		x = 0
+		y = 2
+		relative_position_id = GER_italy_vittorio_emanuele_iii
+		cost = 5
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = ALB }
+			ALB = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+
+			owns_state = 2
+			owns_state = 39
+			owns_state = 158
+			owns_state = 159
+			owns_state = 160
+			owns_state = 161
+			owns_state = 162
+			owns_state = 850
+
+			has_completed_focus = GER_italy_vittorio_emanuele_iii
+		}
+
+		dynamic = yes
+
+		bypass = {
+			ALB = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		will_lead_to_war_with = ALB
+
+		completion_reward = {
+			add_state_core = 44
+			add_state_core = 805
+			add_state_core = 934
+
+			ALB = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}
+
+			if = {
+				limit = {
+					has_character = GER_italy_vittorio_emanuele_iii
+				}
+				GER_italy_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
+			}
+
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = ALB transfer_troops = yes }
+										
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = ALB
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_italy_yugoslavia
+		icon = GFX_focus_GER_fate_of_yugoslavia
+		prerequisite = { 
+			focus = GER_italy_vittorio_emanuele_albania 
+			focus = GER_italy_greece_albania
+		}
+		
+		x = 0
+		y = 3
+		relative_position_id = GER_italy_vittorio_emanuele_iii
+		cost = 5
+		
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			add_state_core = 163
+
+			create_wargoal = {
+				type = take_state_focus
+				target = 103.controller
+			}
+			add_state_core = 102
+			add_state_core = 103
+			add_state_core = 104
+			add_state_core = 105
+			add_state_core = 109
+			add_state_core = 804
+			add_state_core = 853
+		}
+	}
+
+	focus = {
+		id = GER_italy_turkey
+		icon = GFX_focus_TUR_the_montreux_convention
+		prerequisite = { 
+			focus = GER_italy_yugoslavia
+		}
+		
+		x = 0
+		y = 4
+		relative_position_id = GER_italy_vittorio_emanuele_iii
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			controls_state = 184
+			controls_state = 185
+			controls_state = 731
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = 797.controller
+			}
+		}
+	}
+
+	focus = {
+		id = GER_papa_pio_xii
+		icon = GFX_focus_generic_pope
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_papa_pio_xi }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 58
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			GER_papa_pio_xii = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_papa_pio_xii_holy_land
+		icon = GFX_focus_generic_catholic_dominion
+		prerequisite = { 
+			focus = GER_papa_pio_xii
+			focus = GER_papa_pio_xi
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_papa_pio_xii
+		cost = 7
+
+		available = {
+			is_subject = no
+
+			OR = {
+				NOT = {
+					has_country_leader = {
+						character = GER_papa_pio_xi
+					}
+				}
+				GER_papa_pio_xi = {
+					has_trait = papa_pio_xi_immortal
+				}
+			}
+		}
+
+		dynamic = yes
+
+		bypass = {
+			owns_state = 454
+		}
+
+		completion_reward = {
+			454 = {
+				owner = {
+					country_event = {
+						id = WW_hungary.75
+						hours = 6
+						random_hours = 2
+					}
+				}
+			}
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				transfer_state = 454 #PALESTINE
+				add_war_support = 0.03
+				454 = {
+					set_state_category = town
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 4206
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 1086
+						instant_build = yes
+					}
+					IF = {
+						limit = {
+							anti_air_building < 5
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_italy_greece_albania
+		icon = GFX_focus_generic_attack_greece
+		prerequisite = { 
+			focus = GER_italy
+			focus = GER_papa_pio_xii_holy_land
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_papa_pio_xii
+		cost = 5
+		
+		available = {
+			is_subject = no
+
+			owns_state = 2
+			owns_state = 39
+			owns_state = 158
+			owns_state = 159
+			owns_state = 160
+			owns_state = 161
+			owns_state = 162
+			owns_state = 850
+
+			if = {
+				limit = {
+					has_completed_focus = GER_italy_vittorio_emanuele_iii
+				}
+				has_completed_focus = GER_italy_vittorio_emanuele_albania
+			}
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRE
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = GER_italy_vittorio_emanuele_iii
+					}
+				}
+
+				create_wargoal = {
+					type = take_state_focus
+					target = ALB
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_italy_demand_savoy_ticino
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			owns_state = 735
+			owns_state = 846
+		}
+		prerequisite = { focus = GER_italy_greece_albania }
+		icon = GFX_goal_generic_dangerous_deal
+		x = 0
+		y = 3
+
+		relative_position_id = GER_papa_pio_xii
+		cost = 5
+		completion_reward = {
+			add_state_core = 735
+			add_state_core = 846
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			FRA = {
+				country_event = {
+					id = em.27
+					hours = 6
+					random_hours = 12
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 735
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = FRA
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			SWI = {
+				country_event = {
+					id = em.28
+					hours = 6
+					random_hours = 12
+				}
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				GER = {
+					transfer_state = 846
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = SWI
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_mare_nostrum
+		icon = GFX_focus_ITA_mare_nostrum
+		prerequisite = { focus = GER_italy_demand_savoy_ticino }
+		prerequisite = { focus = GER_italy_yugoslavia }
+ 
+ 		x = 0
+		y = 4
+		
+		relative_position_id = GER_papa_pio_xii
+		cost = 10
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				dockyard > 0
+			}
+			is_subject = no
+		}
+
+		completion_reward = {
+
+			IF = {
+				limit = {
+					NOT = { has_rule = can_create_factions }
+				}
+				set_rule = { can_create_factions = yes }
+			}
+
+			IF = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction_from_template = faction_template_italy_empire_faction
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			ELSE_IF = {
+				limit = {
+					is_faction_leader = yes
+				}
+				set_faction_name = italy_empire_faction 
+				IF = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+					set_faction_manifest = faction_manifest_pax_romana
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			unlock_decision_tooltip = form_roman_empire
+
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			add_tech_bonus = { #Changed to require the tech to complete this focus, and give template and production line
+				name = ITA_mare_nostrum_bba
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				technology = super_heavy_tank_chassis
+			}
+			add_tech_bonus = { #Changed to require the tech to complete this focus, and give template and production line
+				name = ITA_mare_nostrum_bba
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				category = heavy_air
+			}
+			#add_tech_bonus = { #Changed to require the tech to complete this focus, and give template and production line
+				#name = ITA_mare_nostrum_bba
+				#bonus = 1.0
+				#uses = 1
+				#technology = ship_hull_super_heavy
+			#}
+
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.75
+			}
+
+			if = {
+				limit = {
+					has_rule = can_only_justify_war_on_threat_country
+				}
+				set_rule = { can_only_justify_war_on_threat_country = no }
+			}
+			if = {
+				limit = {
+					NOT = { has_rule = can_declare_war_on_same_ideology }
+				}
+				set_rule = { can_declare_war_on_same_ideology = yes }
+			}
+			if = {
+				limit = {
+					NOT = { has_rule = can_send_volunteers }
+				}
+				set_rule = { can_send_volunteers = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_papa_pio_xi
+		icon = GFX_focus_por_concordat
+		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
+		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
+		mutually_exclusive = { focus = GER_military_dictatorship }
+		mutually_exclusive = { focus = GER_otto_habsburg }
+		mutually_exclusive = { focus = GER_joseph_habsburg }
+		mutually_exclusive = { focus = GER_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = GER_michael_hohenzollern }
+		mutually_exclusive = { focus = GER_child_simeon }
+		mutually_exclusive = { focus = GER_child_peter }
+		mutually_exclusive = { focus = GER_greece_george }
+		mutually_exclusive = { focus = GER_wilhelmina }
+		mutually_exclusive = { focus = GER_belgium_leopold }
+		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_poland_friedrich_christian }
+		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = GER_denmark_christian_x }
+		mutually_exclusive = { focus = GER_sweden_gustaf_v }
+		mutually_exclusive = { focus = GER_norway_haakon_vii }
+		mutually_exclusive = { focus = GER_iceland_knud }
+		mutually_exclusive = { focus = GER_british_edward }
+		mutually_exclusive = { focus = GER_british_george }
+		mutually_exclusive = { focus = GER_british_elizabeth }
+		mutually_exclusive = { focus = GER_british_wallis_simpson }
+		mutually_exclusive = { focus = GER_france_jean }
+		mutually_exclusive = { focus = GER_france_alphonse }
+		mutually_exclusive = { focus = GER_france_napoleon }
+		mutually_exclusive = { focus = GER_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = GER_brazil_pedro_henrique }
+		mutually_exclusive = { focus = GER_portugal_dom_duarte }
+		mutually_exclusive = { focus = GER_papa_pio_xii }
+		mutually_exclusive = { focus = GER_italy_vittorio_emanuele_iii }
+
+		x = 60
+		y = 1
+		relative_position_id = GER_revive_the_kaiserreich_ww
+		cost = 2
+
+		available = {
+			has_government = neutrality
+
+			date < 1938.2.10
+		}
+
+		completion_reward = {
+			GER_papa_pio_xi = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_papa_pio_xi_ritual1
+		icon = GFX_focus_ITA_moschettieri_del_duce
+		prerequisite = { focus = GER_papa_pio_xi }
+
+		x = 0
+		y = 1
+		relative_position_id = GER_papa_pio_xi
+		cost = 5
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = papa_pio_xi_ritual1_tt
+		}
+	}
+
+	focus = {
+		id = GER_papa_pio_xi_ritual2
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_papa_pio_xi_ritual1 }
+
+		x = 0
+		y = 2
+		relative_position_id = GER_papa_pio_xi
+		cost = 5
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = papa_pio_xi_ritual2_tt
+		}
+	}
+
+	focus = {
+		id = GER_papa_pio_xi_immortal
+		icon = GFX_focus_ITA_imperial_recognition
+		prerequisite = { focus = GER_papa_pio_xi_ritual2 }
+
+		x = 0
+		y = 3
+		relative_position_id = GER_papa_pio_xi
+		cost = 10
+
+		available = {
+			has_government = neutrality
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						date < 1939.2.10
+					}
+
+					add_country_leader_trait = papa_pio_xi_immortal
+				} else = {
+					complete_national_focus = GER_papa_pio_xii
+				}
+			}
+			
+			custom_effect_tooltip = papa_pio_xi_immortal_tt
+		}
+	}
+
+	focus = {
+		id = GER_papa_pio_xi_claims
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_papa_pio_xi_immortal }
+
+		x = 0
+		y = 4
+		relative_position_id = GER_papa_pio_xi
+		cost = 7
+
+		available = {
+			is_subject = no
+
+			AND = {
+				GER_papa_pio_xi = {
+					has_trait = papa_pio_xi_immortal
+				}
+
+				NOT = {
+					has_completed_focus = GER_papa_pio_xii
+				}
+			}
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = AUS
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = ITA
+			}
+
+			add_state_core = 39
+			add_state_core = 153
+			add_state_core = 159
+			add_state_core = 160
+			add_state_core = 736
+			add_state_core = 848
+			add_state_core = 850
+			add_state_core = 852
+		}
 	}
 }
