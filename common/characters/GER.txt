@@ -388,7 +388,7 @@ characters = {
 	}
 
 	GER_papa_pio_xi = {
-		name = ITA_papa_pio_xi_name
+		name = GER_papa_pio_xi_name
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ITA_papa_pio_xi
@@ -397,7 +397,7 @@ characters = {
 	}
 
 	GER_papa_pio_xii = {
-		name = ITA_papa_pio_xii_name
+		name = GER_papa_pio_xii_name
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ITA_papa_pio_xii
@@ -406,7 +406,7 @@ characters = {
 	}
 
 	GER_italy_vittorio_emanuele_iii = {
-		name = ITA_vittorio_emanuele_iii_name
+		name = GER_italy_vittorio_emanuele_iii_name
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ITA_vittorio_emanuele_III

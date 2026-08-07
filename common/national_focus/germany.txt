@@ -42065,7 +42065,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_pavel_bermondt_avalov
-		cost = 5
+		cost = 7
 		
 		available = {
 			is_subject = no
@@ -46481,10 +46481,6 @@ focus_tree = {
 		will_lead_to_war_with = ALB
 
 		completion_reward = {
-			add_state_core = 44
-			add_state_core = 805
-			add_state_core = 934
-
 			ALB = {
 				country_event = {
 					id = em.1
@@ -46617,6 +46613,8 @@ focus_tree = {
 
 		available = {
 			has_government = neutrality
+
+			date > 1939.3.2
 		}
 
 		completion_reward = {
