@@ -38981,7 +38981,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_otto_habsburg = {
+			GER_otto_habsburg = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -39041,7 +39041,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_joseph_habsburg = {
+			GER_joseph_habsburg = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -39101,7 +39101,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_karl_albrecht_habsburg = {
+			GER_karl_albrecht_habsburg = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -39774,7 +39774,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_michael_hohenzollern = {
+			GER_michael_hohenzollern = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -40085,7 +40085,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_child_simeon = {
+			GER_child_simeon = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -40374,7 +40374,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_child_peter = {
+			GER_child_peter = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -40677,7 +40677,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_greece_george = {
+			GER_greece_george = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -40875,7 +40875,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_wilhelmina = {
+			GER_wilhelmina = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -41222,7 +41222,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_belgium_leopold = {
+			GER_belgium_leopold = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -41477,7 +41477,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_lit_karl_gero = {
+			GER_lit_karl = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -41638,7 +41638,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_poland_friedrich_christian = {
+			GER_poland_friedrich_christian = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -41960,7 +41960,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_pavel_bermondt_avalov = {
+			GER_pavel_bermondt_avalov = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -42235,7 +42235,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_norway_haakon_vii = {
+			GER_norway_haakon_vii = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -42429,7 +42429,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_sweden_gustaf_v = {
+			GER_sweden_gustaf_v = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -42713,7 +42713,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_denmark_christian_x = {
+			GER_denmark_christian_x = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -42965,7 +42965,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_iceland_knud = {
+			GER_iceland_knud = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -43243,7 +43243,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_british_edward = {
+			GER_british_edward = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -43441,7 +43441,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_british_george = {
+			GER_british_george = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -44249,7 +44249,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_british_elizabeth = {
+			GER_british_elizabeth = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -44469,7 +44469,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_british_wallis_simpson = {
+			GER_british_wallis_simpson = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -44761,7 +44761,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_france_alphonse = {
+			GER_france_alphonse = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -44984,7 +44984,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_france_jean = {
+			GER_france_jean = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -45197,7 +45197,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_france_napoleon = {
+			GER_france_napoleon = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -45529,7 +45529,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_brazil_pedro_de_alcantara = {
+			GER_brazil_pedro_de_alcantara = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -45841,7 +45841,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_brazil_pedro_henrique = {
+			GER_brazil_pedro_henrique = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -46049,7 +46049,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_portugal_dom_duarte = {
+			GER_portugal_dom_duarte = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -46338,7 +46338,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_italy_vittorio_emanuele_iii = {
+			GER_italy_vittorio_emanuele_iii = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -46615,7 +46615,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_papa_pio_xii = {
+			GER_papa_pio_xii = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -46649,10 +46649,10 @@ focus_tree = {
 			OR = {
 				NOT = {
 					has_country_leader = {
-						character = EM_papa_pio_xi
+						character = GER_papa_pio_xi
 					}
 				}
-				EM_papa_pio_xi = {
+				GER_papa_pio_xi = {
 					has_trait = papa_pio_xi_immortal
 				}
 			}
@@ -47007,7 +47007,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			EM_papa_pio_xi = {
+			GER_papa_pio_xi = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
