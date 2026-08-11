@@ -1,0 +1,266 @@
+# EXTENDED MONARCH PEOPLE
+characters = {
+
+	EM_otto_habsburg = {
+		name = EM_otto_habsburg_name
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_hungary_otto_von_hapsburg"
+			}
+		}
+	}
+
+	EM_joseph_habsburg = {
+		name = EM_joseph_habsburg_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_HUN_joseph_august_von_habsburg
+			}
+		}
+	}
+
+	EM_karl_albrecht_habsburg = {
+		name = EM_karl_albrecht_habsburg_name
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_karl_albrecht"
+			}
+		}
+	}
+
+	EM_michael_hohenzollern = {
+		name = EM_michael_hohenzollern_name
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_romania_michael_i"
+			}
+		}
+	}
+
+	EM_child_simeon = {
+		name = EM_child_simeon_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_bul_regency_council"
+			}
+		}
+	}
+
+	EM_child_peter={
+		name = EM_child_peter_name
+		portraits = {
+			civilian = {
+				large="GFX_portrait_yugoslavia_peter_ii_young"
+			}
+		}
+	}
+
+	EM_greece_george = {
+		name = EM_greece_george_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_gre_george_ii
+			}
+		}
+	}
+
+	EM_wilhelmina = {
+		name = EM_wilhelmina_name
+		portraits={
+			civilian={
+				large="GFX_portrait_HOL_wilhelmina"
+			}
+		}
+	}
+
+	EM_belgium_leopold = {
+		name = EM_belgium_leopold_name
+		portraits={
+			civilian={
+				large = GFX_portrait_BEL_king_leopold_iii 
+			}
+		}
+	}
+
+	EM_lit_karl_gero={
+		name=EM_lit_karl_EMo_name
+		portraits={
+			civilian={
+				large="GFX_portrait_LIT_karl_gero_von_urach"
+			}
+		}
+	}
+
+	EM_poland_friedrich_christian = {
+		name=EM_poland_friedrich_christian_name
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_friedrich_christian"
+			}
+		}
+	}
+
+	EM_pavel_bermondt_avalov = {
+		name=EM_pavel_bermondt_avalov_name
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_pavel_bermondt_avlov"
+			}
+		}
+	}
+
+	EM_denmark_christian_x = {
+		name = EM_denmark_christian_x_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DEN_christian_x
+			}
+		}
+	}
+
+	EM_sweden_gustaf_v = {
+		name=EM_sweden_gustaf_v_name
+		portraits={
+			civilian={
+				large = "GFX_portrait_SWE_king_gustaf_v"
+			}
+		}
+	}
+
+	EM_norway_haakon_vii = {
+		name = EM_norway_haakon_vii_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NOR_king_haakon_vii
+			}
+		}
+	}
+
+	EM_iceland_knud = {
+		name = EM_iceland_knud_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ICE_king_knud
+			}
+		}
+	}
+
+	EM_british_edward = {
+		name = EM_british_edward_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Edward_VIII
+			}
+		}
+	}
+
+	EM_british_george = {
+		name = EM_british_george_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_George_VI
+			}
+		}
+	}
+
+	EM_british_elizabeth = {
+		name = EM_british_elizabeth_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eng_elizabeth_ii"
+			}
+		}
+	}
+
+	EM_british_wallis_simpson = {
+		name = EM_british_wallis_simpson_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eng_wallis_simpson"
+			}
+		}
+	}
+
+	EM_france_jean = {
+		name = EM_france_jean_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fra_jean_duke_of_guise
+			}
+		}
+	}
+
+	EM_france_alphonse = {
+		name = EM_france_alphonse_name
+		portraits = {
+			civilian = {
+				large =  GFX_portrait_SPA_alfonso_xiii
+			}
+		}
+	}
+
+	EM_france_napoleon = {
+		name = EM_france_napoleon_name
+		portraits = {
+			civilian = {
+				large = GFX_portraits_fra_napoleon_vi
+			}
+		}
+	}
+
+	EM_portugal_dom_duarte = {
+		name = EM_portugal_dom_duarte_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Dom_Duarte_Nuno
+			}
+		}
+	}
+
+	EM_brazil_pedro_henrique={
+		name=EM_brazil_pedro_henrique_name
+		portraits={
+			civilian={
+				large=GFX_portrait_BRA_pedro_henrique 
+			}
+		}
+	}
+
+	EM_brazil_pedro_de_alcantara={
+		name=EM_brazil_pedro_de_alcantara_name
+		portraits={
+			civilian={
+				large="GFX_portrait_BRA_pedro_de_alcantara"
+			}
+		}
+	}
+
+	EM_papa_pio_xi = {
+		name = EM_papa_pio_xi_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_papa_pio_xi
+			}
+		}
+	}
+
+	EM_papa_pio_xii = {
+		name = EM_papa_pio_xii_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_papa_pio_xii
+			}
+		}
+	}
+
+	EM_italy_vittorio_emanuele_iii = {
+		name = EM_italy_vittorio_emanuele_iii_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_vittorio_emanuele_III
+			}
+		}
+	}
+
+
+}

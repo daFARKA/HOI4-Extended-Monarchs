@@ -1911,87 +1911,87 @@ AST_australasia = {
 	color_ui = rgb { 0 102 180 }
 }
 
-GER_habsburg = {
+EM_habsburg = {
 	color = rgb { 255 255 255 }
 	color_ui = rgb { 255 255 255 }
 }
 
-GER_big_romania = {
+EM_big_romania = {
 	color = rgb { 180 170 82 }
 	color_ui = rgb { 180 170 82 }
 }
 
-GER_bosporus = {
+EM_bosporus = {
 	color = rgb { 25 39 37 }
 	color_ui = rgb { 25 39 37 }
 }
 
-GER_big_yugoslavia = {
+EM_big_yugoslavia = {
 	color = rgb { 41 27 99 }
 	color_ui = rgb { 41 27 99 }
 }
 
-GER_byzantine = {
+EM_byzantine = {
 	color = rgb { 101 26 134 }
 	color_ui = rgb { 101 26 134 }
 }
 
-GER_dutch_empire = {
+EM_dutch_empire = {
 	color = rgb { 198 115 10 }
 	color_ui = rgb { 198 115 10 }
 }
 
-GER_burgundy = {
+EM_burgundy = {
 	color = rgb { 76 24 24 }
 	color_ui = rgb { 76 24 24 }
 }
 
-GER_polish_commonwealth = {
+EM_polish_commonwealth = {
 	color = rgb { 185 127 147 }
 	color_ui = rgb { 185 127 147 }
 }
 
-GER_pavel_bermontian = {
+EM_pavel_bermontian = {
 	color = rgb { 255 255 255 }
 	color_ui = rgb { 255 255 255 }
 }
 
-GER_nordic_empire = {
+EM_nordic_empire = {
 	color = rgb { 53 63 125 }
 	color_ui = rgb { 53 63 125 }
 }
 
-GER_denmark_empire = {
+EM_denmark_empire = {
 	color = rgb { 125 19 19 }
 	color_ui = rgb { 125 19 19 }
 }
 
-GER_viking_empire = {
+EM_viking_empire = {
 	color = rgb { 216 236 252 }
 	color_ui = rgb { 216 236 252 }
 }
 
-GER_british_empire = {
+EM_british_empire = {
 	color = rgb { 126 113 148 }
 	color_ui = rgb { 126 113 148 }
 }
 
-GER_wallis_empire = {
+EM_wallis_empire = {
 	color = rgb { 27 35 88 }
 	color_ui = rgb { 27 35 88 }
 }
 
-GER_france_spain_empire = {
+EM_france_spain_empire = {
 	color = rgb { 218 75 30 }
 	color_ui = rgb { 218 75 30 }
 }
 
-GER_napoleon_empire = {
+EM_napoleon_empire = {
 	color = rgb { 35 45 113 }
 	color_ui = rgb { 35 45 113 }
 }
 
-GER_portugal_brazil_empire = {
+EM_portugal_brazil_empire = {
 	color = rgb { 25 84 29 }
 	color_ui = rgb { 25 84 29 }
 }

@@ -26778,7 +26778,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -26899,7 +26899,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -38950,7 +38950,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -38981,7 +38981,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_otto_habsburg = {
+			EM_otto_habsburg = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -39010,7 +39010,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -39041,7 +39041,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_joseph_habsburg = {
+			EM_joseph_habsburg = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -39070,7 +39070,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -39101,7 +39101,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_karl_albrecht_habsburg = {
+			EM_karl_albrecht_habsburg = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -39634,7 +39634,7 @@ focus_tree = {
 		dynamic = yes
 
 		completion_reward = {
-			set_cosmetic_tag = GER_habsburg
+			set_cosmetic_tag = EM_habsburg
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -39743,7 +39743,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -39774,7 +39774,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_michael_hohenzollern = {
+			EM_michael_hohenzollern = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -39986,7 +39986,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = GER_big_romania
+			set_cosmetic_tag = EM_big_romania
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -40054,7 +40054,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -40085,7 +40085,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_child_simeon = {
+			EM_child_simeon = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -40303,7 +40303,7 @@ focus_tree = {
 		dynamic = yes
 
 		completion_reward = {
-			set_cosmetic_tag = GER_bosporus
+			set_cosmetic_tag = EM_bosporus
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -40343,7 +40343,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -40374,7 +40374,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_child_peter = {
+			EM_child_peter = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -40605,7 +40605,7 @@ focus_tree = {
 		dynamic = yes
 
 		completion_reward = {
-			set_cosmetic_tag = GER_big_yugoslavia
+			set_cosmetic_tag = EM_big_yugoslavia
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -40646,7 +40646,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_child_peter }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -40677,7 +40677,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_greece_george = {
+			EM_greece_george = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -40844,7 +40844,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_child_peter }
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -40875,7 +40875,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_wilhelmina = {
+			EM_wilhelmina = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -41072,7 +41072,7 @@ focus_tree = {
 		dynamic = yes
 
 		completion_reward = {
-			set_cosmetic_tag = GER_dutch_empire
+			set_cosmetic_tag = EM_dutch_empire
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -41191,7 +41191,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_child_peter }
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -41222,7 +41222,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_belgium_leopold = {
+			EM_belgium_leopold = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -41383,7 +41383,7 @@ focus_tree = {
 		dynamic = yes
 
 		completion_reward = {
-			set_cosmetic_tag = GER_burgundy
+			set_cosmetic_tag = EM_burgundy
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -41433,7 +41433,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_lit_karl_gero
+		id = GER_lit_karl
 		icon = GFX_focus_LIT_king_of_poland
 		prerequisite = { focus = GER_revive_the_kaiserreich_ww }
 		mutually_exclusive = { focus = GER_return_of_the_kaiser_ww }
@@ -41477,7 +41477,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_lit_karl_gero = {
+			EM_lit_karl_gero = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -41494,17 +41494,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_lit_karl_gero_lithuania
+		id = GER_lit_karl_lithuania
 		icon = GFX_focus_LIT_restore_order
 		prerequisite = { 
-			focus = GER_lit_karl_gero 
+			focus = GER_lit_karl
 			focus = GER_poland_friedrich_christian
 			focus = GER_pavel_bermondt_avalov
 		}
 
 		x = 0
 		y = 1
-		relative_position_id = GER_lit_karl_gero
+		relative_position_id = GER_lit_karl
 		cost = 5
 
 		available = {
@@ -41567,9 +41567,9 @@ focus_tree = {
 	focus = {
 		id = GER_claim_greater_lithuania
 		icon = GFX_focus_LIT_restore_the_grand_duchy
-		prerequisite = { focus = GER_lit_karl_gero_lithuania }
+		prerequisite = { focus = GER_lit_karl_lithuania }
 		prerequisite = { focus = GER_poland_friedrich_christian_poland }
-		relative_position_id = GER_lit_karl_gero
+		relative_position_id = GER_lit_karl
 
 		x = 0
 		y = 2
@@ -41608,7 +41608,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
@@ -41638,7 +41638,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_poland_friedrich_christian = {
+			EM_poland_friedrich_christian = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -41658,7 +41658,7 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_poland
 		prerequisite = {
 			focus = GER_poland_friedrich_christian
-			focus = GER_lit_karl_gero
+			focus = GER_lit_karl
 			focus = GER_pavel_bermondt_avalov
 		}
 
@@ -41727,7 +41727,7 @@ focus_tree = {
 	focus = {
 		id = GER_livonia
 		icon = GFX_focus_LIT_claim_livonia
-		prerequisite = { focus = GER_lit_karl_gero_lithuania }
+		prerequisite = { focus = GER_lit_karl_lithuania }
 		prerequisite = { focus = GER_poland_friedrich_christian_poland }
 		relative_position_id = GER_poland_friedrich_christian
 
@@ -41862,7 +41862,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			set_cosmetic_tag = GER_polish_commonwealth
+			set_cosmetic_tag = EM_polish_commonwealth
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -41930,7 +41930,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
@@ -41960,7 +41960,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_pavel_bermondt_avalov = {
+			EM_pavel_bermondt_avalov = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -42175,7 +42175,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = GER_pavel_bermontian
+			set_cosmetic_tag = EM_pavel_bermontian
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -42205,7 +42205,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -42235,7 +42235,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_norway_haakon_vii = {
+			EM_norway_haakon_vii = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -42399,7 +42399,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -42429,7 +42429,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_sweden_gustaf_v = {
+			EM_sweden_gustaf_v = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -42649,7 +42649,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = GER_nordic_empire
+			set_cosmetic_tag = EM_nordic_empire
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -42683,7 +42683,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_sweden_gustaf_v }
@@ -42713,7 +42713,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_denmark_christian_x = {
+			EM_denmark_christian_x = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -42902,7 +42902,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = GER_denmark_empire
+			set_cosmetic_tag = EM_denmark_empire
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -42935,7 +42935,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -42965,7 +42965,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_iceland_knud = {
+			EM_iceland_knud = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -43167,7 +43167,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = GER_viking_empire
+			set_cosmetic_tag = EM_viking_empire
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -43213,7 +43213,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -43243,7 +43243,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_british_edward = {
+			EM_british_edward = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -43411,7 +43411,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -43441,7 +43441,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_british_george = {
+			EM_british_george = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -44219,7 +44219,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -44249,7 +44249,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_british_elizabeth = {
+			EM_british_elizabeth = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -44439,7 +44439,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -44469,7 +44469,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_british_wallis_simpson = {
+			EM_british_wallis_simpson = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -44680,7 +44680,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = GER_wallis_empire
+			set_cosmetic_tag = EM_wallis_empire
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -44731,7 +44731,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -44761,7 +44761,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_france_alphonse = {
+			EM_france_alphonse = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -44838,7 +44838,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = GER_france_spain_empire
+			set_cosmetic_tag = EM_france_spain_empire
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -44954,7 +44954,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -44984,7 +44984,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_france_jean = {
+			EM_france_jean = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -45167,7 +45167,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -45197,7 +45197,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_france_napoleon = {
+			EM_france_napoleon = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -45476,7 +45476,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			set_cosmetic_tag = GER_napoleon_empire
+			set_cosmetic_tag = EM_napoleon_empire
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -45499,7 +45499,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -45529,7 +45529,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_brazil_pedro_de_alcantara = {
+			EM_brazil_pedro_de_alcantara = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -45811,7 +45811,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -45841,7 +45841,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_brazil_pedro_henrique = {
+			EM_brazil_pedro_henrique = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -45879,7 +45879,7 @@ focus_tree = {
 		will_lead_to_war_with = POR
 
 		completion_reward = {
-			set_cosmetic_tag = GER_portugal_brazil_empire
+			set_cosmetic_tag = EM_portugal_brazil_empire
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -46019,7 +46019,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -46049,7 +46049,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_portugal_dom_duarte = {
+			EM_portugal_dom_duarte = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -46308,7 +46308,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -46338,7 +46338,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_italy_vittorio_emanuele_iii = {
+			EM_italy_vittorio_emanuele_iii = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -46490,10 +46490,7 @@ focus_tree = {
 			}
 
 			if = {
-				limit = {
-					has_character = GER_italy_vittorio_emanuele_iii
-				}
-				GER_italy_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
+				add_country_leader_trait = king_of_albania
 			}
 
 			effect_tooltip = {
@@ -46586,7 +46583,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -46618,7 +46615,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_papa_pio_xii = {
+			EM_papa_pio_xii = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -46652,10 +46649,10 @@ focus_tree = {
 			OR = {
 				NOT = {
 					has_country_leader = {
-						character = GER_papa_pio_xi
+						character = EM_papa_pio_xi
 					}
 				}
-				GER_papa_pio_xi = {
+				EM_papa_pio_xi = {
 					has_trait = papa_pio_xi_immortal
 				}
 			}
@@ -46978,7 +46975,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_greece_george }
 		mutually_exclusive = { focus = GER_wilhelmina }
 		mutually_exclusive = { focus = GER_belgium_leopold }
-		mutually_exclusive = { focus = GER_lit_karl_gero }
+		mutually_exclusive = { focus = GER_lit_karl }
 		mutually_exclusive = { focus = GER_poland_friedrich_christian }
 		mutually_exclusive = { focus = GER_pavel_bermondt_avalov }
 		mutually_exclusive = { focus = GER_denmark_christian_x }
@@ -47010,7 +47007,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_papa_pio_xi = {
+			EM_papa_pio_xi = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -47108,7 +47105,7 @@ focus_tree = {
 			is_subject = no
 
 			AND = {
-				GER_papa_pio_xi = {
+				EM_papa_pio_xi = {
 					has_trait = papa_pio_xi_immortal
 				}
 
