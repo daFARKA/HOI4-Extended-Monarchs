@@ -299,9 +299,9 @@ set_stability = 0.50
 
 
 #EXTENDED MONARCH PEOPLE
-recruit_character = AUS_otto_habsburg
-recruit_character = AUS_joseph_habsburg
-recruit_character = AUS_karl_albrecht_habsburg
+recruit_character = AUS_wilhelm_iii
+recruit_character = AUS_wilhelm_iv
+recruit_character = AUS_victoria
 recruit_character = AUS_michael_hohenzollern
 recruit_character = AUS_child_simeon
 recruit_character = AUS_child_peter
@@ -327,4 +327,4 @@ recruit_character = AUS_brazil_pedro_henrique
 recruit_character = AUS_brazil_pedro_de_alcantara
 recruit_character = AUS_papa_pio_xi
 recruit_character = AUS_papa_pio_xii
-recruit_character = AUS_italy_vittorio_AUSanuele_iii
+recruit_character = AUS_italy_vittorio_emanuele_iii

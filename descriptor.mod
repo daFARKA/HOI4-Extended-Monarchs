@@ -3,6 +3,6 @@ tags={
 	"Alternative History"
 	"National Focuses"
 }
-name="Extended Monarchs_"
+name="Extended Monarchs"
 supported_version="1.19.*"
 remote_file_id="3779226631"

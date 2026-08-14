@@ -1,28 +1,29 @@
 characters = {
 
-	AUS_otto_habsburg = {
-		name = AUS_otto_habsburg_name
+	AUS_wilhelm_iii = {
+		name = GER_wilhelm_iii_name
 		portraits = {
 			civilian = {
-				large = "GFX_Portrait_hungary_otto_von_hapsburg"
-			}
+				large = GFX_portrait_ger_wilhelm_iii
+			}	
 		}
 	}
 
-	AUS_joseph_habsburg = {
-		name = AUS_joseph_habsburg_name
+	AUS_wilhelm_iv = {
+		name = GER_wilhelm_iv_name
 		portraits = {
 			civilian = {
-				large = GFX_portrait_HUN_joseph_august_von_habsburg
-			}
+				large = GFX_portrait_GER_wilhelm_iv
+			}	
 		}
 	}
 
-	AUS_karl_albrecht_habsburg = {
-		name = AUS_karl_albrecht_habsburg_name
+	AUS_victoria = {
+		name = AUS_victoria_name
+		gender = female
 		portraits = {
 			civilian = {
-				large="GFX_portrait_POL_karl_albrecht"
+				large = GFX_portrait_ger_victoria_louise
 			}
 		}
 	}

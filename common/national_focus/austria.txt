@@ -5103,8 +5103,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism}
 		mutually_exclusive = { focus = AUS_austromarxism_focus focus = AUS_hold_elections }
 
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
+		mutually_exclusive = { focus = AUS_victoria }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -9404,7 +9405,7 @@ focus_tree = {
 		id = AUS_totalitarian_safety
 		icon = GFX_focus_AUS_totalitarian_safety
 		mutually_exclusive = { focus = AUS_repeal_the_may_constitution }
-		x = 80
+		x = 70
 		y = 0
 		relative_position_id = AUS_repeal_the_may_constitution
 
@@ -15883,78 +15884,15 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
-		id = AUS_otto_habsburg
-		icon = GFX_focus_HUN_invite_otto_to_the_throne
+		id = AUS_wilhelm_iii
+		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
-		mutually_exclusive = { focus = AUS_michael_hohenzollern }
-		mutually_exclusive = { focus = AUS_child_simeon }
-		mutually_exclusive = { focus = AUS_child_peter }
-		mutually_exclusive = { focus = AUS_greece_george }
-		mutually_exclusive = { focus = AUS_wilhelmina }
-		mutually_exclusive = { focus = AUS_belgium_leopold }
-		mutually_exclusive = { focus = AUS_lit_karl }
-		mutually_exclusive = { focus = AUS_poland_friedrich_christian }
-		mutually_exclusive = { focus = AUS_pavel_bermondt_avalov }
-		mutually_exclusive = { focus = AUS_denmark_christian_x }
-		mutually_exclusive = { focus = AUS_sweden_gustaf_v }
-		mutually_exclusive = { focus = AUS_norway_haakon_vii }
-		mutually_exclusive = { focus = AUS_iceland_knud }
-		mutually_exclusive = { focus = AUS_british_edward }
-		mutually_exclusive = { focus = AUS_british_george }
-		mutually_exclusive = { focus = AUS_british_elizabeth }
-		mutually_exclusive = { focus = AUS_british_wallis_simpson }
-		mutually_exclusive = { focus = AUS_france_jean }
-		mutually_exclusive = { focus = AUS_france_alphonse }
-		mutually_exclusive = { focus = AUS_france_napoleon }
-		mutually_exclusive = { focus = AUS_brazil_pedro_de_alcantara }
-		mutually_exclusive = { focus = AUS_portugal_dom_duarte }
-		mutually_exclusive = { focus = AUS_brazil_pedro_henrique }
-		mutually_exclusive = { focus = AUS_papa_pio_xi }
-		mutually_exclusive = { focus = AUS_papa_pio_xii }
-		mutually_exclusive = { focus = AUS_italy_vittorio_emanuele_iii }
-
-
-		x = 6
-		y = 1
-		relative_position_id = AUS_austria_against_fascism
-		cost = 2
-
-
-		available = {
-			has_government = neutrality
-		}
-
-
-		completion_reward = {
-			AUS_otto_habsburg = {
-				add_country_leader_role = {
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							HUN_the_habsburg_prince			
-						}
-					}
-					promote_leader = yes
-				}
-			}
-		}
-	}
-
-
-	focus = {
-		id = AUS_joseph_habsburg
-		icon = GFX_focus_HUN_the_old_habsburg_king
-		prerequisite = { focus = AUS_austria_against_fascism }
-		
-		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -15995,13 +15933,13 @@ focus_tree = {
 
 
 		completion_reward = {
-			AUS_joseph_habsburg = {
+			AUS_wilhelm_iii = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
 						ideology = despotism
 						traits = {
-							HUN_the_old_warden	
+										
 						}
 					}
 					promote_leader = yes
@@ -16010,15 +15948,717 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = AUS_germany_poland1
+		icon = GFX_focus_GER_restore_eastern_imperial_possessions
+		prerequisite = { 
+			focus = AUS_wilhelm_iii 
+			focus = AUS_wilhelm_iv
+			focus = AUS_victoria
+		}
+
+
+		x = 0
+		y = 1
+		relative_position_id = AUS_wilhelm_iii
+		cost = 5
+
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = POL }
+			POL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+
+			owns_state = 5
+			owns_state = 61
+			owns_state = 62
+			owns_state = 63
+			owns_state = 64
+			owns_state = 65
+			owns_state = 66
+			owns_state = 67
+			owns_state = 68
+			owns_state = 763
+		}
+
+
+		dynamic = yes
+
+
+		bypass = {
+			POL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+
+		will_lead_to_war_with = POL
+
+
+		completion_reward = {
+			add_state_core = 85
+			add_state_core = 86
+			add_state_core = 762
+			add_state_core = 807
+
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+
+			POL = {
+				country_event = {
+					id = em.29
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				AUS = {
+					transfer_state = 85
+					transfer_state = 86
+					transfer_state = 762
+					transfer_state = 807
+				}
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = POL
+				}
+			}
+		}
+	}
 
 	focus = {
-		id = AUS_karl_albrecht_habsburg
-		icon = GFX_focus_POL_habsburg
+		id = AUS_germany_poland2
+		icon = GFX_focus_GER_further_demands_for_polish_territory
+		prerequisite = { focus = AUS_germany_poland1 }
+
+
+		x = 0
+		y = 2
+		relative_position_id = AUS_wilhelm_iii
+		cost = 5
+
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = POL }
+			POL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+
+			owns_state = 85
+			owns_state = 86
+			owns_state = 762
+			owns_state = 807
+		}
+
+
+		dynamic = yes
+
+
+		bypass = {
+			POL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+
+		will_lead_to_war_with = POL
+
+
+		completion_reward = {
+			add_state_core = 87
+			add_state_core = 97
+			add_state_core = 98
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			POL = {
+				country_event = {
+					id = em.30
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				AUS = {
+					transfer_state = 87
+					transfer_state = 97
+					transfer_state = 98
+				}
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = POL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_brest_litovsk1
+		icon = GFX_focus_GER_eastern_grand_duchies
+		prerequisite = { focus = AUS_germany_poland2 }
+
+
+		x = 0
+		y = 3
+		relative_position_id = AUS_wilhelm_iii
+		cost = 7
+
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = POL }
+			POL = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_in_faction = no
+				}
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+
+			owns_state = 87
+			owns_state = 97
+			owns_state = 98
+
+			owns_state = 11
+			owns_state = 188
+			owns_state = 189
+			owns_state = 814
+			owns_state = 815
+		}
+
+
+		dynamic = yes
+
+
+		bypass = {
+			POL = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_in_faction = yes
+						NOT = { is_in_faction_with = ROOT }
+					}
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+
+		will_lead_to_war_with = POL
+
+
+		completion_reward = {
+			add_state_claim = 784
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			POL = {
+				country_event = {
+					id = em.31
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				UKR = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+				}
+
+				BLR = {
+					transfer_state = 94
+					transfer_state = 95
+					transfer_state = 96
+				}
+				
+				AUS = {
+					transfer_state = 784
+
+					set_autonomy = {
+						target = UKR
+						autonomy_state = autonomy_puppet
+					}
+
+					set_autonomy = {
+						target = BLR
+						autonomy_state = autonomy_integrated_puppet
+					}
+
+					set_autonomy = {
+						target = POL
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = POL
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_brest_litovsk2
+		icon = GFX_focus_GER_brest_litovsk_borders
+		prerequisite = { focus = AUS_brest_litovsk1 }
+
+
+		x = 0
+		y = 4
+		relative_position_id = AUS_wilhelm_iii
+		cost = 10
+
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = SOV }
+			SOV = {
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+
+			has_subject = UKR
+			has_subject = BLR
+			has_subject = POL
+
+			OR = {
+				AND = {
+					has_subject = LIT
+					has_subject = EST
+				}
+				AND = {
+					owns_state = 12
+					owns_state = 190
+					owns_state = 809
+					owns_state = 808
+					owns_state = 810
+
+					owns_state = 13
+					owns_state = 191
+					owns_state = 811
+					owns_state = 812
+					owns_state = 813
+				}
+			}
+		}
+
+
+		dynamic = yes
+
+
+		bypass = {
+			SOV = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+
+		will_lead_to_war_with = SOV
+
+
+		completion_reward = {
+			AUS = {
+				country_event = {
+					id = em.33
+					hours = 1
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			SOV = {
+				country_event = {
+					id = em.32
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				UKR = {
+					transfer_state = 192
+					transfer_state = 193
+					transfer_state = 196
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 199
+					transfer_state = 200
+					transfer_state = 201
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 221
+					transfer_state = 225
+					transfer_state = 226
+					transfer_state = 227
+					transfer_state = 228
+					transfer_state = 259
+					transfer_state = 834
+				}
+
+				BLR = {
+					transfer_state = 194
+					transfer_state = 204
+					transfer_state = 206
+					transfer_state = 207
+				}
+
+				LAT = {
+					transfer_state = 209
+					transfer_state = 210
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = SOV
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_wilhelm_iv
+		icon = GFX_focus_GER_monarchy_compromise
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
+		mutually_exclusive = { focus = AUS_michael_hohenzollern }
+		mutually_exclusive = { focus = AUS_child_simeon }
+		mutually_exclusive = { focus = AUS_child_peter }
+		mutually_exclusive = { focus = AUS_greece_george }
+		mutually_exclusive = { focus = AUS_wilhelmina }
+		mutually_exclusive = { focus = AUS_belgium_leopold }
+		mutually_exclusive = { focus = AUS_lit_karl }
+		mutually_exclusive = { focus = AUS_poland_friedrich_christian }
+		mutually_exclusive = { focus = AUS_pavel_bermondt_avalov }
+		mutually_exclusive = { focus = AUS_denmark_christian_x }
+		mutually_exclusive = { focus = AUS_sweden_gustaf_v }
+		mutually_exclusive = { focus = AUS_norway_haakon_vii }
+		mutually_exclusive = { focus = AUS_iceland_knud }
+		mutually_exclusive = { focus = AUS_british_edward }
+		mutually_exclusive = { focus = AUS_british_george }
+		mutually_exclusive = { focus = AUS_british_elizabeth }
+		mutually_exclusive = { focus = AUS_british_wallis_simpson }
+		mutually_exclusive = { focus = AUS_france_jean }
+		mutually_exclusive = { focus = AUS_france_alphonse }
+		mutually_exclusive = { focus = AUS_france_napoleon }
+		mutually_exclusive = { focus = AUS_brazil_pedro_de_alcantara }
+		mutually_exclusive = { focus = AUS_portugal_dom_duarte }
+		mutually_exclusive = { focus = AUS_brazil_pedro_henrique }
+		mutually_exclusive = { focus = AUS_papa_pio_xi }
+		mutually_exclusive = { focus = AUS_papa_pio_xii }
+		mutually_exclusive = { focus = AUS_italy_vittorio_emanuele_iii }
+
+
+		x = 6
+		y = 1
+		relative_position_id = AUS_austria_against_fascism
+		cost = 2
+
+
+		available = {
+			has_government = neutrality
+		}
+
+
+		completion_reward = {
+			AUS_wilhelm_iv = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+										
+						}
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_germany
+		icon = GFX_focus_GER_the_austrian_question
+		prerequisite = {
+			focus = AUS_wilhelm_iii
+			focus = AUS_wilhelm_iv
+			focus = AUS_victoria
+		}
+
+
+		x = 0
+		y = 1
+		relative_position_id = AUS_wilhelm_iv
+		cost = 10
+
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = GER }
+			GER = {
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
+				}
+			}
+		}
+
+
+		dynamic = yes
+
+
+		bypass = {
+			GER = { 
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+
+		will_lead_to_war_with = GER
+
+
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = em.1
+					hours = 6
+					random_hours = 12
+				}	
+			}		
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				annex_country = { target = GER transfer_troops = yes }
+
+
+				custom_effect_tooltip = if_they_refuse_tt
+				create_wargoal = {
+					type = take_state_focus
+					target = GER
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_germany_germans
+		icon = GFX_focus_attack_switzerland
+		prerequisite = { focus = AUS_germany_france }
+
+
+		x = 0
+		y = 3
+		relative_position_id = AUS_wilhelm_iv
+		cost = 5
+
+
+		available = {
+			is_subject = no
+
+
+			owns_state = 46 
+			owns_state = 76 
+			owns_state = 77 
+			owns_state = 78 
+			owns_state = 79 
+			owns_state = 81 
+			owns_state = 82 
+			owns_state = 83 
+			owns_state = 84 
+			owns_state = 766
+			owns_state = 971
+		}
+
+
+		dynamic = yes
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SWI
+				generator = { 3 151 845 846 847 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = AUS
+				generator = { 4 152 153 848 975 976}
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = 39.controller
+				generator = { 39 850 }
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_germany_france
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = AUS_germany }
+
+
+		x = 0
+		y = 2
+		relative_position_id = AUS_wilhelm_iv
+		cost = 7
+
+
+		available = {
+			is_subject = no
+
+
+			owns_state = 46 
+			owns_state = 76 
+			owns_state = 77 
+			owns_state = 78 
+			owns_state = 79 
+			owns_state = 81 
+			owns_state = 82 
+			owns_state = 83 
+			owns_state = 84 
+			owns_state = 766
+			owns_state = 971
+		}
+
+
+		dynamic = yes
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				generator = { 28 }
+			}
+
+
+			add_state_core = 28
+		}
+	}
+
+	focus = {
+		id = AUS_german_empire
+		icon = GFX_focus_GER_glory_to_the_imperial_army
+		prerequisite = { focus = AUS_germany_germans }
+		prerequisite = { focus = AUS_brest_litovsk1 }
+
+
+		x = 0
+		y = 4
+		relative_position_id = AUS_wilhelm_iv
+		cost = 10
+
+
+		available = {
+			is_subject = no
+
+			has_completed_focus = AUS_sudeten_jutland
+		}
+
+
+		dynamic = yes
+
+
+		completion_reward = {
+			set_cosmetic_tag = EM_german_empire
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_state_core = 3
+			add_state_core = 151
+			add_state_core = 845
+			add_state_core = 846
+			add_state_core = 847
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 39
+			add_state_core = 850
+		}
+	}
+
+	focus = {
+		id = AUS_victoria
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = AUS_austria_against_fascism }
+		
+		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -16059,13 +16699,13 @@ focus_tree = {
 
 
 		completion_reward = {
-			AUS_karl_albrecht_habsburg = {
+			AUS_victoria = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
 						ideology = despotism
 						traits = {
-							patriot_king
+										
 						}
 					}
 					promote_leader = yes
@@ -16074,27 +16714,26 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
-		id = AUS_habsburg_austria
-		icon = GFX_focus_GER_the_austrian_question
+		id = AUS_germany_lithuania
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { 
-			focus = AUS_otto_habsburg
-			focus = AUS_joseph_habsburg
-			focus = AUS_karl_albrecht_habsburg
+			focus = AUS_wilhelm_iii
+			focus = AUS_wilhelm_iv
+			focus = AUS_victoria 
 		}
 
 
 		x = 0
 		y = 1
-		relative_position_id = AUS_otto_habsburg
+		relative_position_id = AUS_victoria
 		cost = 5
 
 
 		available = {
 			is_subject = no
-			NOT = { has_war_with = AUS }
-			AUS = {
+			NOT = { has_war_with = LIT }
+			LIT = {
 				OR = {
 					is_in_faction_with = ROOT
 					is_in_faction = no
@@ -16104,6 +16743,17 @@ focus_tree = {
 					is_subject = no
 				}
 			}
+
+			owns_state = 5
+			owns_state = 61
+			owns_state = 62
+			owns_state = 63
+			owns_state = 64
+			owns_state = 65
+			owns_state = 66
+			owns_state = 67
+			owns_state = 68
+			owns_state = 763
 		}
 
 
@@ -16111,7 +16761,7 @@ focus_tree = {
 
 
 		bypass = {
-			AUS = { 
+			LIT = { 
 				OR = {
 					exists = no
 					has_war_with = ROOT
@@ -16128,91 +16778,11 @@ focus_tree = {
 		}
 
 
-		will_lead_to_war_with = AUS
+		will_lead_to_war_with = LIT
 
 
 		completion_reward = {
-			AUS = {
-				country_event = {
-					id = wuw_AUS_realpolitik.36
-					hours = 6
-					random_hours = 12
-				}	
-			}		
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				annex_country = { target = AUS transfer_troops = yes }
-										
-				AUS_anschluss_modify_mefo_bills_or_economy_of_conquest = yes
-
-
-				custom_effect_tooltip = if_they_refuse_tt
-				create_wargoal = {
-					type = take_state_focus
-					target = AUS
-				}
-			}
-		}
-	}
-
-
-	focus = {
-		id = AUS_habsburg_hungary
-		icon = GFX_focus_generic_befriend_hungary
-		prerequisite = {
-			focus = AUS_otto_habsburg
-			focus = AUS_joseph_habsburg
-		}
-
-
-		x = -2
-		y = 1
-		relative_position_id = AUS_otto_habsburg
-		cost = 5
-
-
-		available = {
-			is_subject = no
-			NOT = { has_war_with = HUN }
-			HUN = {
-				OR = {
-					is_in_faction_with = ROOT
-					is_in_faction = no
-				}
-				OR = {
-					is_subject_of = ROOT
-					is_subject = no
-				}
-			}
-		}
-
-
-		dynamic = yes
-
-
-		bypass = {
-			HUN = { 
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					AND = {
-						is_in_faction = yes
-						NOT = { is_in_faction_with = ROOT }
-					}
-					AND = {
-						is_subject = yes
-						NOT = { is_subject_of = ROOT }
-					}
-				}
-			}
-		}
-
-
-		will_lead_to_war_with = HUN
-
-
-		completion_reward = {
-			HUN = {
+			LIT = {
 				country_event = {
 					id = em.1
 					hours = 6
@@ -16221,189 +16791,38 @@ focus_tree = {
 			}		
 			effect_tooltip = {
 				custom_effect_tooltip = if_they_accept_tt
-				annex_country = { target = HUN transfer_troops = yes }
+				annex_country = { target = LIT transfer_troops = yes }
 
 
 				custom_effect_tooltip = if_they_refuse_tt
 				create_wargoal = {
 					type = take_state_focus
-					target = HUN
+					target = LIT
 				}
 			}
 		}
 	}
 
-
 	focus = {
-		id = AUS_karl_albrecht_poland
-		icon = GFX_focus_generic_befriend_poland
-		prerequisite = {
-			focus = AUS_karl_albrecht_habsburg
-		}
-
-
-		x = 2
-		y = 1
-		relative_position_id = AUS_otto_habsburg
-		cost = 5
-
-
-		available = {
-			is_subject = no
-			NOT = { has_war_with = POL }
-			POL = {
-				OR = {
-					is_in_faction_with = ROOT
-					is_in_faction = no
-				}
-				OR = {
-					is_subject_of = ROOT
-					is_subject = no
-				}
-			}
-		}
-
-
-		dynamic = yes
-
-
-		bypass = {
-			POL = { 
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					AND = {
-						is_in_faction = yes
-						NOT = { is_in_faction_with = ROOT }
-					}
-					AND = {
-						is_subject = yes
-						NOT = { is_subject_of = ROOT }
-					}
-				}
-			}
-		}
-
-
-		will_lead_to_war_with = POL
-
-
-		completion_reward = {
-			POL = {
-				country_event = {
-					id = em.1
-					hours = 6
-					random_hours = 12
-				}	
-			}		
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				annex_country = { target = POL transfer_troops = yes }
-										
-				custom_effect_tooltip = if_they_refuse_tt
-				create_wargoal = {
-					type = take_state_focus
-					target = POL
-				}
-			}
-		}
-	}
-
-
-	focus = {
-		id = AUS_habsburg_czechoslovakia
-		icon = GFX_focus_GER_integrate_czechoslovakia
-		prerequisite = { focus = AUS_habsburg_austria }
-		prerequisite = { 
-			focus = AUS_habsburg_hungary 
-			focus = AUS_karl_albrecht_poland
-		}
+		id = AUS_germany_baltic
+		icon = GFX_focus_GER_subduing_the_baltic_states
+		prerequisite = { focus = AUS_germany_lithuania }
 
 
 		x = 0
 		y = 2
-		relative_position_id = AUS_otto_habsburg
-		cost = 7
-
-
-		available = {
-			is_subject = no
-			NOT = { has_war_with = CZE }
-			CZE = {
-				OR = {
-					is_in_faction_with = ROOT
-					is_in_faction = no
-				}
-				OR = {
-					is_subject_of = ROOT
-					is_subject = no
-				}
-			}
-		}
-
-
-		dynamic = yes
-
-
-		bypass = {
-			CZE = { 
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					AND = {
-						is_in_faction = yes
-						NOT = { is_in_faction_with = ROOT }
-					}
-					AND = {
-						is_subject = yes
-						NOT = { is_subject_of = ROOT }
-					}
-				}
-			}
-		}
-
-
-		will_lead_to_war_with = CZE
-
-
-		completion_reward = {
-			CZE = {
-				country_event = {
-					id = em.1
-					hours = 6
-					random_hours = 12
-				}	
-			}
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				annex_country = { target = CZE transfer_troops = yes }
-
-
-				custom_effect_tooltip = if_they_refuse_tt
-				create_wargoal = {
-					type = take_state_focus
-					target = CZE
-				}
-			}
-		}
-	}
-
-
-	focus = {
-		id = AUS_habsburg_galicia
-		icon = GFX_focus_generic_attack_poland
-		prerequisite = { focus = AUS_habsburg_austria }
-		prerequisite = { focus = AUS_habsburg_hungary }
-
-
-		x = -2
-		y = 2
-		relative_position_id = AUS_otto_habsburg
+		relative_position_id = AUS_victoria
 		cost = 5
 
 
 		available = {
 			is_subject = no
+
+			owns_state = 11
+			owns_state = 188
+			owns_state = 189
+			owns_state = 814
+			owns_state = 815
 		}
 
 
@@ -16413,67 +16832,24 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
-				target = POL
-				generator = { 88 89 91 }
+				target = LAT
 			}
-
-
-			add_state_claim = 88
-			add_state_claim = 89
-			add_state_claim = 91
-		}
-	}
-
-
-	focus = {
-		id = AUS_karl_albrecht_hungary
-		icon = GFX_focus_generic_attack_hungary
-		prerequisite = { focus = AUS_karl_albrecht_poland }
-
-
-		x = 2
-		y = 2
-		relative_position_id = AUS_otto_habsburg
-		cost = 5
-
-
-		available = {
-			is_subject = no
-		}
-
-
-		dynamic = yes
-
-
-		will_lead_to_war_with = HUN
-
-
-		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
-				target = HUN
-				generator = { 43 154 155 973 974 }
+				target = EST
 			}
-
-
-			add_state_core = 43
-			add_state_core = 154
-			add_state_core = 155
-			add_state_core = 973
-			add_state_core = 974
 		}
 	}
 
-
 	focus = {
-		id = AUS_habsburg_triple_monarchy
-		icon = GFX_focus_YUG_banovina_of_croatia
-		prerequisite = { focus = AUS_habsburg_czechoslovakia }
+		id = AUS_schlieffen
+		icon = GFX_focus_GER_schlieffen_once_more
+		prerequisite = { focus = AUS_germany_france }
 
 
 		x = 0
 		y = 3
-		relative_position_id = AUS_otto_habsburg
+		relative_position_id = AUS_victoria
 		cost = 5
 
 
@@ -16488,303 +16864,70 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
-				target = 45.controller
-				generator = {
-					45
-					102
-					103
-					109
-					764
-					853
-				}
+				target = HOL
 			}
 
-
-			add_state_claim = 45 
-			add_state_claim = 102 
-			add_state_claim = 103 
-			add_state_claim = 109 
-			add_state_claim = 764 
-			add_state_claim = 853
-		}
-	}
-
-
-	focus = {
-		id = AUS_habsburg_transylvania
-		icon = GFX_focus_YUG_autonomous_transylvania
-		prerequisite = { focus = AUS_habsburg_czechoslovakia }
-
-
-		x = 2
-		y = 3
-		relative_position_id = AUS_otto_habsburg
-		cost = 5
-
-
-		available = {
-			is_subject = no
-		}
-
-
-		dynamic = yes
-
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = 76.controller
-				generator = { 76 82 83 84 }
-			}
-
-
-			add_state_claim = 76 
-			add_state_claim = 82 
-			add_state_claim = 83 
-			add_state_claim = 84 
-
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			create_wargoal = {
 				type = take_state_focus
-				target = 80.controller
-				generator = { 80 }
+				target = BEL
+				generator = { 980 }
 			}
+			add_state_core = 980
 
+			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_state_claim = 80
-		}
-	}
-
-
-	focus = {
-		id = AUS_habsburg_south_tyrol
-		icon = GFX_focus_attack_italy
-		prerequisite = { focus = AUS_habsburg_czechoslovakia }
-
-
-		x = -2
-		y = 3
-		relative_position_id = AUS_otto_habsburg
-		cost = 5
-
-
-		available = {
-			is_subject = no
-		}
-
-
-		dynamic = yes
-
-
-		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
-				target = 39.controller
-				generator = { 39 850 }
+				target = LUX
+				generator = { 8 }
 			}
-
-
-			add_state_core = 39
-			add_state_core = 850
+			add_state_core = 8
 		}
 	}
 
-
 	focus = {
-		id = AUS_habsburg_empire
-		icon = GFX_focus_AUS_proclaim_austrian_empire
-		prerequisite = { focus = AUS_habsburg_triple_monarchy }
+		id = AUS_sudeten_jutland
+		icon = GFX_focus_GER_realpolitik
+		prerequisite = { focus = AUS_schlieffen }
 
 
 		x = 0
 		y = 4
-		relative_position_id = AUS_otto_habsburg
-		cost = 10
+		relative_position_id = AUS_victoria
+		cost = 6
 
 
 		available = {
 			is_subject = no
 			
-			AND = {
-				owns_state = 4
-				owns_state = 152
-				owns_state = 153
-				owns_state = 848
-				owns_state = 975
-				owns_state = 976
-
-
-				owns_state = 43
-				owns_state = 154
-				owns_state = 155
-				owns_state = 973
-				owns_state = 974
-
-
-				owns_state = 9 
-				owns_state = 69 
-				owns_state = 70 
-				owns_state = 71 
-				owns_state = 72 
-				owns_state = 73 
-				owns_state = 74 
-				owns_state = 75 
-				owns_state = 664 
-				owns_state = 972
-
-
-				owns_state = 39
-				owns_state = 850
-
-
-				owns_state = 88
-				owns_state = 89
-				owns_state = 91
-
-
-				owns_state = 45
-				owns_state = 102
-				owns_state = 103
-				owns_state = 109
-				owns_state = 764
-				owns_state = 853
-
-
-				owns_state = 76
-				owns_state = 82
-				owns_state = 83
-				owns_state = 84
-
-
-				owns_state = 80
-
-
-				owns_state = 104 
-				owns_state = 804
-			}
+			owns_state = 8
+			owns_state = 980
 		}
-
-
-		dynamic = yes
 
 
 		completion_reward = {
-			set_cosmetic_tag = EM_habsburg
+			CZE = {
+				country_event = {
+					id = em.34
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			add_state_core = 69
+			add_state_core = 972
 
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-
-			add_state_core = 88
-			add_state_core = 89
-			add_state_core = 91
-
-
-			add_state_core = 45 
-			add_state_core = 102 
-			add_state_core = 103 
-			add_state_core = 109 
-			add_state_core = 764 
-			add_state_core = 853
-
-
-			add_state_core = 76 
-			add_state_core = 82 
-			add_state_core = 83 
-			add_state_core = 84 
-
-
-			add_state_core = 80
-
-
-			add_state_core = 104
-			add_state_core = 804
+			DEN = {
+				country_event = {
+					id = em.35
+					hours = 6
+					random_hours = 12
+				}	
+			}
+			add_state_core = 912
 		}
 	}
-
-
-	focus = {
-		id = AUS_habsburg_bosnia
-		icon = GFX_focus_YUG_safeguard_bosnia
-		prerequisite = { focus = AUS_habsburg_triple_monarchy }
-
-
-		x = 2
-		y = 4
-		relative_position_id = AUS_otto_habsburg
-		cost = 2
-
-
-		available = {
-			is_subject = no
-		}
-
-
-		dynamic = yes
-
-
-		will_lead_to_war_with = YUG
-
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = 104.controller
-				generator = { 104 804 }
-			}
-
-
-			add_state_claim = 104 
-			add_state_claim = 804
-		}
-	}
-
-
-	focus = {
-		id = AUS_habsburg_adriatic_expansions
-		icon = GFX_focus_AUS_heritage_of_an_empire
-		prerequisite = { focus = AUS_habsburg_triple_monarchy }
-
-
-		x = -2
-		y = 4
-		relative_position_id = AUS_otto_habsburg
-		cost = 5
-
-
-		available = {
-			is_subject = no
-		}
-
-
-		dynamic = yes
-
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = 736.controller
-				generator = { 160 163 736 852 }
-			}
-
-
-			add_state_claim = 160 
-			add_state_claim = 163
-			add_state_claim = 736
-			add_state_claim = 852
-
-
-			create_wargoal = {
-				type = take_state_focus
-				target = 105.controller
-				generator = { 105 }
-			}
-
-
-			add_state_claim = 105
-		}
-	}
-
 
 	focus = {
 		id = AUS_michael_hohenzollern
@@ -16792,9 +16935,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
 		mutually_exclusive = { focus = AUS_greece_george }
@@ -17150,9 +17293,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_peter }
 		mutually_exclusive = { focus = AUS_greece_george }
@@ -17472,9 +17615,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_greece_george }
@@ -17814,9 +17957,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -18036,9 +18179,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -18256,6 +18399,17 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
+				target = HOL
+				generator = { 7 35 36 }
+			}
+			add_state_core = 7
+			add_state_core = 35
+			add_state_core = 36
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			create_wargoal = {
+				type = take_state_focus
 				target = BEL
 				generator = { 6 34 977 980 }
 			}
@@ -18264,6 +18418,7 @@ focus_tree = {
 			add_state_core = 977
 			add_state_core = 980
 
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			create_wargoal = {
 				type = take_state_focus
@@ -18427,9 +18582,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -18714,9 +18869,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -18891,9 +19046,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -19235,9 +19390,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -19548,9 +19703,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -19758,9 +19913,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -20071,9 +20226,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -20347,9 +20502,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -20654,9 +20809,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -20868,9 +21023,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -20941,7 +21096,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AUS_british_george
-		cost = 7
+		cost = 10
 
 
 		available = {
@@ -21702,9 +21857,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -21938,9 +22093,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -22263,9 +22418,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -22512,9 +22667,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -22583,7 +22738,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AUS_france_jean
-		cost = 7
+		cost = 10
 
 
 		available = {
@@ -22746,9 +22901,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -23111,9 +23266,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -23449,9 +23604,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -23684,9 +23839,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -24000,9 +24155,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -24070,7 +24225,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AUS_italy_vittorio_emanuele_iii
-		cost = 7
+		cost = 10
 
 
 		available = {
@@ -24303,9 +24458,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }
@@ -24730,9 +24885,9 @@ focus_tree = {
 		prerequisite = { focus = AUS_austria_against_fascism }
 		
 		mutually_exclusive = { focus = AUS_reinstate_the_imperial_council }
-		mutually_exclusive = { focus = AUS_otto_habsburg }
-		mutually_exclusive = { focus = AUS_joseph_habsburg }
-		mutually_exclusive = { focus = AUS_karl_albrecht_habsburg }
+		mutually_exclusive = { focus = AUS_wilhelm_iv }
+		mutually_exclusive = { focus = AUS_victoria }
+		mutually_exclusive = { focus = AUS_wilhelm_iii }
 		mutually_exclusive = { focus = AUS_michael_hohenzollern }
 		mutually_exclusive = { focus = AUS_child_simeon }
 		mutually_exclusive = { focus = AUS_child_peter }

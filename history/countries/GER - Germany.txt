@@ -993,7 +993,7 @@ recruit_character = GER_brazil_pedro_henrique
 recruit_character = GER_brazil_pedro_de_alcantara
 recruit_character = GER_papa_pio_xi
 recruit_character = GER_papa_pio_xii
-recruit_character = GER_italy_vittorio_GERanuele_iii
+recruit_character = GER_italy_vittorio_emanuele_iii
 
 #NEW PEOPLE WW
 recruit_character = GER_werner_von_blomberg

@@ -1995,3 +1995,8 @@ EM_portugal_brazil_empire = {
 	color = rgb { 25 84 29 }
 	color_ui = rgb { 25 84 29 }
 }
+
+EM_german_empire = {
+	color = rgb { 31 9 59 }
+	color_ui = rgb { 31 9 59 }
+}

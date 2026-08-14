@@ -41032,6 +41032,17 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
+				target = HOL
+				generator = { 7 35 36 }
+			}
+			add_state_core = 7
+			add_state_core = 35
+			add_state_core = 36
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			create_wargoal = {
+				type = take_state_focus
 				target = BEL
 				generator = { 6 34 977 980 }
 			}
@@ -41039,6 +41050,8 @@ focus_tree = {
 			add_state_core = 34
 			add_state_core = 977
 			add_state_core = 980
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			create_wargoal = {
 				type = take_state_focus
@@ -46338,7 +46351,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_italy_vittorio_emanuele_iii = {
+			AUS_italy_vittorio_emanuele_iii = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -47105,7 +47118,7 @@ focus_tree = {
 			is_subject = no
 
 			AND = {
-				EM_papa_pio_xi = {
+				GER_papa_pio_xi = {
 					has_trait = papa_pio_xi_immortal
 				}
 
